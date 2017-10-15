@@ -3,7 +3,9 @@
 	{
 		"text8"
 		{
-			"description": "Cleaned small sample from wikipedia"
+			"description": "Cleaned small sample from wikipedia",
+			"checksum": "e7d0467690b71b2def2357613007187f",
+			"file_name": "text8"
 		}
 	}
 }
