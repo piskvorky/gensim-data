@@ -7,7 +7,7 @@
 		},
 		"fake-news": {
 			"description": "It contains text and metadata scraped from 244 websites tagged as 'bullshit' here by the BS Detector Chrome Extension by Daniel Sieradski.",
-			"checksum": "d41d8cd98f00b204e9800998ecf8427e",
+			"checksum": "a61f985190ba361defdfc3fef616b9cd",
 			"file_name": "fake.csv",
 			"source": "Kaggle"
 		}
