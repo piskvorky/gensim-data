@@ -12,5 +12,15 @@
 			"source": "Kaggle"
 		}
 	},
-	"models": {}
+	"models": {
+		"glove-wiki-gigaword-50": {
+			"description": "Pre-trained vectors ,Wikipedia 2014 + Gigaword 5,6B tokens, 400K vocab, uncased. https://nlp.stanford.edu/projects/glove/"
+			"parameters": "dimension = 50",
+			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-50.txt`",
+			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
+			"checksum": "b269a9c8b16c3178d3d0651fd68c3fe9",
+			"file_name": "glove-wiki-gigaword-50.txt"
+		}
+	
+	}
 }
