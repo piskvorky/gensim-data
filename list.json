@@ -61,5 +61,13 @@
 			"checksum": "42b16fc98c60059ae309501b8e0cb668",
 			"file_name": "glove-twitter-50.txt"
 		},
+		"glove-twitter-100":{
+			"description": "Pre-trained vectors, 2B tweets, 27B tokens, 1.2M vocab, uncased. https://nlp.stanford.edu/projects/glove/",
+			"parameters": "dimensions = 100",
+			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-100.txt`",
+			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
+			"checksum": "31b964e13ca7f8769b648b506b119c76",
+			"file_name": "glove-twitter-100.txt"
+		},
 	}
 }
