@@ -24,7 +24,7 @@
 		"glove-wiki-gigaword-100":{
 			"description": "Pre-trained vectors ,Wikipedia 2014 + Gigaword 5,6B tokens, 400K vocab, uncased. https://nlp.stanford.edu/projects/glove/",
 			"parameters": "dimensions = 100",
-			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-100.txt",
+			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-100.txt`",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
 			"checksum": "980b245345a7ae79e74fe1a3fb995278",
 			"file_name": "glove-wiki-gigaword-100.txt"
@@ -32,18 +32,26 @@
 		"glove-wiki-gigaword-200":{
 			"description": "Pre-trained vectors ,Wikipedia 2014 + Gigaword 5,6B tokens, 400K vocab, uncased. https://nlp.stanford.edu/projects/glove/",
 			"parameters": "dimentions = 200",
-			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-200.txt",
+			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-200.txt`",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
 			"checksum": "dd3a148274c20935ebd541f4381e6043",
 			"file_name": "glove-wiki-gigaword-200.txt"
 		},
 		"glove-wiki-gigaword-300":{
-			"description": "Pre-trained vectors ,Wikipedia 2014 + Gigaword 5,6B tokens, 400K vocab, uncased. https://nlp.stanford.edu/projects/glove/",
+			"description": "Pre-trained vectors, Wikipedia 2014 + Gigaword 5, 6B tokens, 400K vocab, uncased. https://nlp.stanford.edu/projects/glove/",
 			"parameters": "dimensions = 300",
-			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-300.txt",
+			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-300.txt`",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
 			"checksum": "c6e713332ed2fd42b109f7f9fd42a3e6",
 			"file_name": "glove-wiki-gigaword-300.txt"
+		},
+		"glove-twitter-25":{
+			"description": "Pre-trained vectors, 2B tweets, 27B tokens, 1.2M vocab, uncased. https://nlp.stanford.edu/projects/glove/",
+			"parameters": "dimensions = 25",
+			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-25.txt`",
+			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
+			"checksum": "5c3784f59a8a7761059342dc32f8f9e6",
+			"file_name": "glove-twitter-25.txt"
 		},
 	}
 }
