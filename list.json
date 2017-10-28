@@ -13,7 +13,7 @@
 		},
 		"20-newsgroups": {
 			"description": "The 20 Newsgroups data set is a collection of approximately 20,000 newsgroup documents, partitioned (nearly) evenly across 20 different newsgroups",
-			"checksum": "a61f985190ba361defdfc3fef616b9cd",
+			"checksum": "d6e9e45cb8cb77ec5276dfa6dfc14318",
 			"file_name": "20-newsgroups",
 			"source": "http://qwone.com/~jason/20Newsgroups/"
 		}
