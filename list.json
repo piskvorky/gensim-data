@@ -3,7 +3,8 @@
 		"text8": {
 			"description": "Cleaned small sample from wikipedia",
 			"checksum": "f407f5aed497fc3b0fb33b98c4f9d855",
-			"file_name": "text8"
+			"file_name": "text8",
+			"source": "http://mattmahoney.net/dc/text8.zip"
 		},
 		"fake-news": {
 			"description": "It contains text and metadata scraped from 244 websites tagged as 'bullshit' here by the BS Detector Chrome Extension by Daniel Sieradski.",
