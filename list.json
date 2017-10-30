@@ -85,7 +85,7 @@
 		"word2vec-matrix-synopsis":{
 			"description": "Word vecrors of the movie matrix",
 			"parameters": "dimentions = 50",
-			"preprocessing": "Converted to w2v using a preprocessed corpus.",
+			"preprocessing": "Converted to w2v using a preprocessed corpus. Converted to w2v format with `python3.5 -m gensim.models.word2vec -train <input_filename> -iter 50 -output <output_filename>`",
 			"papers": "",
 			"checksum": "704ec028f0c90216582ea874b6a6ed99",
 			"file_name": "word2vec-matrix-synopsis.txt"
