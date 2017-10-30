@@ -82,6 +82,14 @@
 			"checksum": "31b964e13ca7f8769b648b506b119c76",
 			"file_name": "glove-twitter-100.txt"
 		},
+		"glove-twitter-200":{
+			"description": "Pre-trained vectors, 2B tweets, 27B tokens, 1.2M vocab, uncased. https://nlp.stanford.edu/projects/glove/",
+			"parameters": "dimensions = 200",
+			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-200.txt`",
+			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
+			"checksum": "7f9cf73835ec82acdbb87e5792f9365e",
+			"file_name": "glove-twitter-200.txt"
+		},
 		"word2vec-matrix-synopsis":{
 			"description": "Word vecrors of the movie matrix",
 			"parameters": "dimentions = 50",
