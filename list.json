@@ -17,6 +17,12 @@
 			"checksum": "d6e9e45cb8cb77ec5276dfa6dfc14318",
 			"file_name": "20-newsgroups",
 			"source": "http://qwone.com/~jason/20Newsgroups/"
+		},
+		"matrix-synopsis": {
+			"description": "Synopsis of the movie matrix",
+			"checksum": "25a12bdb4d037c560ec69602becaa413",
+			"file_name": "matrix-synopsis.txt",
+			"source": "http://www.imdb.com/title/tt0133093/plotsummary?ref_=ttpl_pl_syn#synopsis"
 		}
 	},
 	"models": {
@@ -76,5 +82,13 @@
 			"checksum": "31b964e13ca7f8769b648b506b119c76",
 			"file_name": "glove-twitter-100.txt"
 		},
+		"word2vec-matrix-synopsis":{
+			"description": "Word vecrors of the movie matrix",
+			"parameters": "dimentions = 50",
+			"preprocessing": "Converted to w2v using a preprocessed corpus.",
+			"papers": "",
+			"checksum": "704ec028f0c90216582ea874b6a6ed99",
+			"file_name": "word2vec-matrix-synopsis.txt"
+		}
 	}
 }
