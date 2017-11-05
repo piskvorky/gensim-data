@@ -6,10 +6,10 @@
 			"file_name": "text8",
 			"source": "http://mattmahoney.net/dc/text8.zip",
 			"parts": "4",
-			"checksum-1": "c85f6def0bf0cac921b9faa5b6144be3",
-			"checksum-2": "19a8e07d61706a5df64b2027cc190120",
-			"checksum-3": "d19e5d859ff1b563a41832e85f38125c",
-			"checksum-4": "6e7052e3da5097457fea69c9aff812ce"
+			"checksum-1": "63702262782f9aef872e530103f40a39",
+			"checksum-2": "33d64c0546fd5476581a4154429eac57",
+			"checksum-3": "e795396a5a87260250d49ea7962fe65b",
+			"checksum-4": "d54c00a8c4edecb2498a9dc3c8d28cb3"
 		},
 		"fake-news": {
 			"description": "It contains text and metadata scraped from 244 websites tagged as 'bullshit' here by the BS Detector Chrome Extension by Daniel Sieradski.",
