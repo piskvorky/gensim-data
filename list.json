@@ -2,28 +2,28 @@
 	"corpora": {
 		"text8": {
 			"description": "Cleaned small sample from wikipedia",
-			"checksum-1": "f407f5aed497fc3b0fb33b98c4f9d855",
+			"checksum": "f407f5aed497fc3b0fb33b98c4f9d855",
 			"file_name": "text8",
 			"source": "http://mattmahoney.net/dc/text8.zip",
 			"parts": "1"
 		},
 		"fake-news": {
 			"description": "It contains text and metadata scraped from 244 websites tagged as 'bullshit' here by the BS Detector Chrome Extension by Daniel Sieradski.",
-			"checksum-1": "a61f985190ba361defdfc3fef616b9cd",
+			"checksum": "a61f985190ba361defdfc3fef616b9cd",
 			"file_name": "fake.csv",
 			"source": "Kaggle",
 			"parts": "1"
 		},
 		"20-newsgroups": {
 			"description": "The 20 Newsgroups data set is a collection of approximately 20,000 newsgroup documents, partitioned (nearly) evenly across 20 different newsgroups",
-			"checksum-1": "d6e9e45cb8cb77ec5276dfa6dfc14318",
+			"checksum": "d6e9e45cb8cb77ec5276dfa6dfc14318",
 			"file_name": "20-newsgroups",
 			"source": "http://qwone.com/~jason/20Newsgroups/",
 			"parts": "1"
 		},
 		"matrix-synopsis": {
 			"description": "Synopsis of the movie matrix",
-			"checksum-1": "25a12bdb4d037c560ec69602becaa413",
+			"checksum": "25a12bdb4d037c560ec69602becaa413",
 			"file_name": "matrix-synopsis.txt",
 			"source": "http://www.imdb.com/title/tt0133093/plotsummary?ref_=ttpl_pl_syn#synopsis",
 			"parts": "1"
@@ -35,7 +35,7 @@
 			"parameters": "dimension = 50",
 			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-50.txt`",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
-			"checksum-1": "b269a9c8b16c3178d3d0651fd68c3fe9",
+			"checksum": "b269a9c8b16c3178d3d0651fd68c3fe9",
 			"file_name": "glove-wiki-gigaword-50.txt",
 			"parts": "1"
 		},
@@ -44,7 +44,7 @@
 			"parameters": "dimensions = 100",
 			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-100.txt`",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
-			"checksum-1": "980b245345a7ae79e74fe1a3fb995278",
+			"checksum": "980b245345a7ae79e74fe1a3fb995278",
 			"file_name": "glove-wiki-gigaword-100.txt",
 			"parts": "1"
 		},
@@ -53,7 +53,7 @@
 			"parameters": "dimentions = 200",
 			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-200.txt`",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
-			"checksum-1": "dd3a148274c20935ebd541f4381e6043",
+			"checksum": "dd3a148274c20935ebd541f4381e6043",
 			"file_name": "glove-wiki-gigaword-200.txt",
 			"parts": "1"
 		},
@@ -62,7 +62,7 @@
 			"parameters": "dimensions = 300",
 			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-300.txt`",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
-			"checksum-1": "c6e713332ed2fd42b109f7f9fd42a3e6",
+			"checksum": "c6e713332ed2fd42b109f7f9fd42a3e6",
 			"file_name": "glove-wiki-gigaword-300.txt",
 			"parts": "1"
 		},
@@ -71,7 +71,7 @@
 			"parameters": "dimensions = 25",
 			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-25.txt`",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
-			"checksum-1": "5c3784f59a8a7761059342dc32f8f9e6",
+			"checksum": "5c3784f59a8a7761059342dc32f8f9e6",
 			"file_name": "glove-twitter-25.txt",
 			"parts": "1"
 		},
@@ -80,7 +80,7 @@
 			"parameters": "dimensions = 50",
 			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-50.txt`",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
-			"checksum-1": "42b16fc98c60059ae309501b8e0cb668",
+			"checksum": "42b16fc98c60059ae309501b8e0cb668",
 			"file_name": "glove-twitter-50.txt",
 			"parts": "1"
 		},
@@ -89,7 +89,7 @@
 			"parameters": "dimensions = 100",
 			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-100.txt`",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
-			"checksum-1": "31b964e13ca7f8769b648b506b119c76",
+			"checksum": "31b964e13ca7f8769b648b506b119c76",
 			"file_name": "glove-twitter-100.txt",
 			"parts": "1"
 		},
@@ -98,7 +98,7 @@
 			"parameters": "dimensions = 200",
 			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-200.txt`",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
-			"checksum-1": "7f9cf73835ec82acdbb87e5792f9365e",
+			"checksum": "7f9cf73835ec82acdbb87e5792f9365e",
 			"file_name": "glove-twitter-200.txt",
 			"parts": "1"
 		},
@@ -107,7 +107,7 @@
 			"parameters": "dimentions = 50",
 			"preprocessing": "Converted to w2v using a preprocessed corpus. Converted to w2v format with `python3.5 -m gensim.models.word2vec -train <input_filename> -iter 50 -output <output_filename>`",
 			"papers": "",
-			"checksum-1": "704ec028f0c90216582ea874b6a6ed99",
+			"checksum": "704ec028f0c90216582ea874b6a6ed99",
 			"file_name": "word2vec-matrix-synopsis.txt",
 			"parts": "1"
 		}
