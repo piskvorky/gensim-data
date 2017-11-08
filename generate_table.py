@@ -11,7 +11,8 @@ def generate_table(fn):
     datasets = sorted(data["corpora"].items(), key=lambda kv: kv[0])
     models = sorted(data["models"].items(), key=lambda kv: kv[0])
 
-    print("## Datasets")
+    print("## Available data")
+    print("### Datasets")
     print("| name | source | description |")
     print("|------|--------|-------------|")
     for name, other in datasets:
@@ -22,7 +23,7 @@ def generate_table(fn):
         ))
 
     print("")
-    print("## Models")
+    print("### Models")
     print("| name | description | papers | preprocessing | parameters |")
     print("|------|-------------|------------|--------|---------------|")
     for name, other in models:
