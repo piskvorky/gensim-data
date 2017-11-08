@@ -25,7 +25,7 @@
 			"source": "http://qwone.com/~jason/20Newsgroups/",
 			"parts": 1
 		},
-		"matrix-synopsis": {
+		"__testing_matrix-synopsis": {
 			"description": "Synopsis of the movie matrix",
 			"checksum": "25a12bdb4d037c560ec69602becaa413",
 			"file_name": "matrix-synopsis.txt",
@@ -106,7 +106,7 @@
 			"file_name": "glove-twitter-200.txt",
 			"parts": 1
 		},
-		"word2vec-matrix-synopsis":{
+		"__testing_word2vec-matrix-synopsis":{
 			"description": "Word vecrors of the movie matrix",
 			"parameters": "dimentions = 50",
 			"preprocessing": "Converted to w2v using a preprocessed corpus. Converted to w2v format with `python3.5 -m gensim.models.word2vec -train <input_filename> -iter 50 -output <output_filename>`",
