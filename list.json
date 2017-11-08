@@ -32,6 +32,15 @@
 			"source": "http://www.imdb.com/title/tt0133093/plotsummary?ref_=ttpl_pl_syn#synopsis",
 			"parts": 1
 		}
+		"__testing_multipart-matrix-synopsis": {
+			"description": "Synopsis of the movie matrix",
+			"checksum-0": "1b907374c90aae19bbf6bc7676b43dbb",
+			"checksum-1": "4621c2a340b11a74785e5c91e6e4484a",
+			"checksum-2": "31d8484043fd092875820076c2d97b1d",
+			"file_name": "matrix-synopsis.txt",
+			"source": "http://www.imdb.com/title/tt0133093/plotsummary?ref_=ttpl_pl_syn#synopsis",
+			"parts": 3
+		}
 	},
 	"models": {
 		"glove-wiki-gigaword-50": {
