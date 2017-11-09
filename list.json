@@ -127,6 +127,14 @@
 			"checksum": "704ec028f0c90216582ea874b6a6ed99",
 			"file_name": "word2vec-matrix-synopsis.txt",
 			"parts": 1
+		},
+		"google-news-word2vec":{
+			"description": " pre-trained vectors trained on part of Google News dataset (about 100 billion words). The model contains 300-dimensional vectors for 3 million words and phrases.",
+			"parameters": "dimentions = 300",
+			"papers": "Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg Corrado, and Jeffrey Dean. Distributed Representations of Words and Phrases and their Compositionality. In Proceedings of NIPS, 2013",
+			"checksum": "",
+			"file_name": "GoogleNews-vectors-negative300.bin.gz",
+			"parts": 1
 		}
 	}
 }
