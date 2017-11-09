@@ -119,7 +119,7 @@
 			"checksum": "704ec028f0c90216582ea874b6a6ed99",
 			"file_name": "word2vec-matrix-synopsis.txt",
 			"parts": 1
-		}
+		},
 		"google-news-word2vec":{
 			"description": " pre-trained vectors trained on part of Google News dataset (about 100 billion words). The model contains 300-dimensional vectors for 3 million words and phrases.",
 			"parameters": "dimentions = 300",
