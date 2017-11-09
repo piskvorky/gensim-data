@@ -9,15 +9,15 @@
 		},
 		"fake-news": {
 			"description": "It contains text and metadata scraped from 244 websites tagged as 'bullshit' here by the BS Detector Chrome Extension by Daniel Sieradski.",
-			"checksum": "a61f985190ba361defdfc3fef616b9cd",
-			"file_name": "fake.csv",
+			"checksum": "5e64e942df13219465927f92dcefd5fe",
+			"file_name": "fake.gz",
 			"source": "Kaggle",
 			"parts": 1
 		},
 		"20-newsgroups": {
 			"description": "The 20 Newsgroups data set is a collection of approximately 20,000 newsgroup documents, partitioned (nearly) evenly across 20 different newsgroups",
-			"checksum": "d6e9e45cb8cb77ec5276dfa6dfc14318",
-			"file_name": "20-newsgroups",
+			"checksum": "c92fd4f6640a86d5ba89eaad818a9891",
+			"file_name": "20-newsgroups.gz",
 			"source": "http://qwone.com/~jason/20Newsgroups/",
 			"parts": 1
 		},
@@ -52,8 +52,8 @@
 			"parameters": "dimension = 50",
 			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-50.txt`",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
-			"checksum": "b269a9c8b16c3178d3d0651fd68c3fe9",
-			"file_name": "glove-wiki-gigaword-50.txt",
+			"checksum": "c289bc5d7f2f02c6dc9f2f9b67641813",
+			"file_name": "glove-wiki-gigaword-50.gz",
 			"parts": 1
 		},
 		"glove-wiki-gigaword-100":{
@@ -88,8 +88,8 @@
 			"parameters": "dimensions = 25",
 			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-25.txt`",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
-			"checksum": "5c3784f59a8a7761059342dc32f8f9e6",
-			"file_name": "glove-twitter-25.txt",
+			"checksum": "50db0211d7e7a2dcd362c6b774762793",
+			"file_name": "glove-twitter-25.gz",
 			"parts": 1
 		},
 		"glove-twitter-50":{
@@ -97,8 +97,8 @@
 			"parameters": "dimensions = 50",
 			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-50.txt`",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
-			"checksum": "42b16fc98c60059ae309501b8e0cb668",
-			"file_name": "glove-twitter-50.txt",
+			"checksum": "c168f18641f8c8a00fe30984c4799b2b",
+			"file_name": "glove-twitter-50.gz",
 			"parts": 1
 		},
 		"glove-twitter-100":{
