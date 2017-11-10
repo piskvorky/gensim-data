@@ -68,11 +68,11 @@ To load model/dataset you can use 2 types of API:
   ```
   
  - **CLI**
-  ```bash
-  python -m gensim.downloader --info  # show info about available models/datasets
-  python -m gensim.downloader --info text8  # download text8 dataset to ~/gensim-data/text8
-  python -m gensim.downloader --download glove-twitter-25  # download model to ~/gensim-data/glove-twitter-50/
-  ```
+   ```bash
+   python -m gensim.downloader --info  # show info about available models/datasets
+   python -m gensim.downloader --info text8  # download text8 dataset to ~/gensim-data/text8
+   python -m gensim.downloader --download glove-twitter-25  # download model to ~/gensim-data/glove-twitter-50/
+   ```
 ## Available data
 ### Datasets
 | name | source | description |
