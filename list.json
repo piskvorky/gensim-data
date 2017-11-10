@@ -23,17 +23,17 @@
 		},
 		"__testing_matrix-synopsis": {
 			"description": "Synopsis of the movie matrix",
-			"checksum": "25a12bdb4d037c560ec69602becaa413",
-			"file_name": "matrix-synopsis.txt",
+			"checksum": "1767ac93a089b43899d54944b07d9dc5",
+			"file_name": "__testing_matrix-synopsis.gz",
 			"source": "http://www.imdb.com/title/tt0133093/plotsummary?ref_=ttpl_pl_syn#synopsis",
 			"parts": 1
 		},
 		"__testing_multipart-matrix-synopsis": {
 			"description": "Synopsis of the movie matrix",
-			"checksum-0": "1b907374c90aae19bbf6bc7676b43dbb",
-			"checksum-1": "4621c2a340b11a74785e5c91e6e4484a",
-			"checksum-2": "31d8484043fd092875820076c2d97b1d",
-			"file_name": "matrix-synopsis.txt",
+			"checksum-0": "c8b0c7d8cf562b1b632c262a173ac338",
+			"checksum-1": "5ff7fc6818e9a5d9bc1cf12c35ed8b96",
+			"checksum-2": "966db9d274d125beaac7987202076cba",
+			"file_name": "__testing_multipart-matrix-synopsis.gz",
 			"source": "http://www.imdb.com/title/tt0133093/plotsummary?ref_=ttpl_pl_syn#synopsis",
 			"parts": 3
 		}
@@ -124,8 +124,8 @@
 			"parameters": "dimentions = 50",
 			"preprocessing": "Converted to w2v using a preprocessed corpus. Converted to w2v format with `python3.5 -m gensim.models.word2vec -train <input_filename> -iter 50 -output <output_filename>`",
 			"papers": "",
-			"checksum": "704ec028f0c90216582ea874b6a6ed99",
-			"file_name": "word2vec-matrix-synopsis.txt",
+			"checksum": "534dcb8b56a360977a269b7bfc62d124",
+			"file_name": "__testing_word2vec-matrix-synopsis.gz",
 			"parts": 1
 		}
 	}
