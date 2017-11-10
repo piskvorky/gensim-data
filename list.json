@@ -2,8 +2,8 @@
 	"corpora": {
 		"text8": {
 			"description": "Cleaned small sample from wikipedia",
-			"checksum": "f407f5aed497fc3b0fb33b98c4f9d855",
-			"file_name": "text8",
+			"checksum": "68799af40b6bda07dfa47a32612e5364",
+			"file_name": "text8.gz",
 			"source": "http://mattmahoney.net/dc/text8.zip",
 			"parts": 1
 		},
