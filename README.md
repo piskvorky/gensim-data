@@ -1,15 +1,10 @@
 # Gensim data
 This repository contains models and dataset that available through [gensim](https://github.com/RaRe-Technologies/gensim) download api. This repo used as storage.
-:red_circle: When you use this API, all data will be stored in `~/gensim-data` folder.
+
+:red_circle: When you use this API, **all data will be stored in `~/gensim-data` folder**.
 
 ## Quickstart
 To load model/dataset you can use 2 types of API:
-- CLI
-  ```bash
-  python -m gensim.downloader --info  # show info about available models/datasets
-  python -m gensim.downloader --info text8  # download text8 dataset to ~/gensim-data/text8
-  python -m gensim.downloader --download glove-twitter-25  # download model to ~/gensim-data/glove-twitter-50/
-  ```
 - Python API
 
   Example: load pre-trained vectors
@@ -44,9 +39,30 @@ To load model/dataset you can use 2 types of API:
 
   corpus = api.load('text8')  # download dataset and load iterable to memory
   model = Word2Vec(corpus)  # train model
+  model.most_similar("car")
 
+  """
+  Output:
+
+  [(u'driver', 0.8273754119873047),
+   (u'motorcycle', 0.769528865814209),
+   (u'cars', 0.7356342077255249),
+   (u'truck', 0.7331641912460327),
+   (u'taxi', 0.718338131904602),
+   (u'vehicle', 0.7177008390426636),
+   (u'racing', 0.6697118878364563),
+   (u'automobile', 0.6657308340072632),
+   (u'passenger', 0.6377975344657898),
+   (u'glider', 0.6374964714050293)]
+ 
+  """
   ```
-  
+ - CLI
+  ```bash
+  python -m gensim.downloader --info  # show info about available models/datasets
+  python -m gensim.downloader --info text8  # download text8 dataset to ~/gensim-data/text8
+  python -m gensim.downloader --download glove-twitter-25  # download model to ~/gensim-data/glove-twitter-50/
+  ```
 ## Available data
 ### Datasets
 | name | source | description |
