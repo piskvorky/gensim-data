@@ -8,7 +8,7 @@ from gensim.downloader import base_dir
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger("test-downloader-api")
 
-logger.info(sys.version)
+logger.info(sys.version.replace("\n", " "))
 if os.path.exists(base_dir):
     logger.warning("REMOVE {}".format(base_dir))
     shutil.rmtree(base_dir)
