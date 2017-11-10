@@ -5,7 +5,7 @@ This repository contains models and dataset that available through [gensim](http
 
 ## Quickstart
 To load model/dataset you can use 2 types of API:
-- Python API
+- **Python API**
 
   Example: load pre-trained vectors
   ```python
@@ -67,7 +67,7 @@ To load model/dataset you can use 2 types of API:
   
   ```
   
- - CLI
+ - **CLI**
   ```bash
   python -m gensim.downloader --info  # show info about available models/datasets
   python -m gensim.downloader --info text8  # download text8 dataset to ~/gensim-data/text8
