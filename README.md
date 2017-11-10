@@ -63,7 +63,7 @@ To load model/dataset you can use 2 types of API:
   import gensim.downloader as api
   
   print(api.load("20-newsgroups", return_path=True))  # output: /home/user/gensim-data/20-newsgroups/20-newsgroups.gz
-  print(api.load("glove-twitter-25"))  # output: /home/ivan/gensim-data/glove-twitter-25/glove-twitter-25.gz
+  print(api.load("glove-twitter-25", return_path=True))  # output: /home/user/gensim-data/glove-twitter-25/glove-twitter-25.gz
   
   ```
   
