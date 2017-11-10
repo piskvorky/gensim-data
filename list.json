@@ -10,7 +10,7 @@
 		"fake-news": {
 			"description": "It contains text and metadata scraped from 244 websites tagged as 'bullshit' here by the BS Detector Chrome Extension by Daniel Sieradski.",
 			"checksum": "5e64e942df13219465927f92dcefd5fe",
-			"file_name": "fake.gz",
+			"file_name": "fake-news.gz",
 			"source": "Kaggle",
 			"parts": 1
 		},
@@ -43,8 +43,8 @@
 			"description": "Pre-trained vectors trained on part of Google News dataset (about 100 billion words). The model contains 300-dimensional vectors for 3 million words and phrases. The phrases were obtained using a simple data-driven approach described in 'Distributed Representations of Words and Phrases and their Compositionality', https://code.google.com/archive/p/word2vec/",
 			"parameters": "dimension = 300",
 			"papers": "https://arxiv.org/abs/1301.3781, https://arxiv.org/abs/1310.4546, https://www.microsoft.com/en-us/research/publication/linguistic-regularities-in-continuous-space-word-representations/?from=http%3A%2F%2Fresearch.microsoft.com%2Fpubs%2F189726%2Frvecs.pdf",
-			"checksum": "fbb3528c76f39b07993e6c389a846f40",
-			"file_name": "GoogleNews-vectors-negative300.bin",
+			"checksum": "a5e5354d40acb95f9ec66d5977d140ef",
+			"file_name": "word2vec-google-news-300.gz",
 			"parts": 1
 		},
 		"glove-wiki-gigaword-50": {
@@ -61,8 +61,8 @@
 			"parameters": "dimensions = 100",
 			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-100.txt`",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
-			"checksum": "980b245345a7ae79e74fe1a3fb995278",
-			"file_name": "glove-wiki-gigaword-100.txt",
+			"checksum": "40ec481866001177b8cd4cb0df92924f",
+			"file_name": "glove-wiki-gigaword-100.gz",
 			"parts": 1
 		},
 		"glove-wiki-gigaword-200":{
@@ -70,8 +70,8 @@
 			"parameters": "dimentions = 200",
 			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-200.txt`",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
-			"checksum": "dd3a148274c20935ebd541f4381e6043",
-			"file_name": "glove-wiki-gigaword-200.txt",
+			"checksum": "59652db361b7a87ee73834a6c391dfc1",
+			"file_name": "glove-wiki-gigaword-200.gz",
 			"parts": 1
 		},
 		"glove-wiki-gigaword-300":{
@@ -79,8 +79,8 @@
 			"parameters": "dimensions = 300",
 			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-300.txt`",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
-			"checksum": "c6e713332ed2fd42b109f7f9fd42a3e6",
-			"file_name": "glove-wiki-gigaword-300.txt",
+			"checksum": "29e9329ac2241937d55b852e8284e89b",
+			"file_name": "glove-wiki-gigaword-300.gz",
 			"parts": 1
 		},
 		"glove-twitter-25":{
@@ -106,8 +106,8 @@
 			"parameters": "dimensions = 100",
 			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-100.txt`",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
-			"checksum": "31b964e13ca7f8769b648b506b119c76",
-			"file_name": "glove-twitter-100.txt",
+			"checksum": "b04f7bed38756d64cf55b58ce7e97b15",
+			"file_name": "glove-twitter-100.gz",
 			"parts": 1
 		},
 		"glove-twitter-200":{
@@ -115,8 +115,8 @@
 			"parameters": "dimensions = 200",
 			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-200.txt`",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
-			"checksum": "7f9cf73835ec82acdbb87e5792f9365e",
-			"file_name": "glove-twitter-200.txt",
+			"checksum": "e52e8392d1860b95d5308a525817d8f9",
+			"file_name": "glove-twitter-200.gz",
 			"parts": 1
 		},
 		"__testing_word2vec-matrix-synopsis":{
