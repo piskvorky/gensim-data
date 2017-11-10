@@ -16,7 +16,7 @@ To load model/dataset you can use 2 types of API:
   model.most_similar("cat")
   
   """
-  Output:
+  output:
 
   [(u'dog', 0.9590819478034973),
    (u'monkey', 0.9203578233718872),
@@ -42,7 +42,7 @@ To load model/dataset you can use 2 types of API:
   model.most_similar("car")
 
   """
-  Output:
+  output:
 
   [(u'driver', 0.8273754119873047),
    (u'motorcycle', 0.769528865814209),
@@ -57,6 +57,16 @@ To load model/dataset you can use 2 types of API:
  
   """
   ```
+  
+  Example: how to **only** download data (without loading to memory)
+  ```
+  import gensim.downloader as api
+  
+  print(api.load("20-newsgroups", return_path=True))  # output: /home/user/gensim-data/20-newsgroups/20-newsgroups.gz
+  print(api.load("glove-twitter-25"))  # output: /home/ivan/gensim-data/glove-twitter-25/glove-twitter-25.gz
+  
+  ```
+  
  - CLI
   ```bash
   python -m gensim.downloader --info  # show info about available models/datasets
