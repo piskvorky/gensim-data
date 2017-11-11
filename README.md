@@ -4,6 +4,8 @@ This repository keeps the models and datasets for the [gensim](https://github.co
 
 💡 When you use the gensim download API, **all data will be stored in the `~/gensim-data` folder**.
 
+In current repository, all data stored as attachment files in [github-releases](https://github.com/RaRe-Technologies/gensim-data/releases)
+
 ## Quickstart
 
 To load a model/dataset, use either the Python or command line interface:
