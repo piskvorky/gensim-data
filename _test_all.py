@@ -23,12 +23,13 @@ for idx, model_name in enumerate(info["models"]):
     try:
         logger.info(api.load(model_name).most_similar("who"))
     except Exception as e:
-        logger.critical(e)
+        logger.exception(e)
         failed_models.append(model_name)
 
 if failed_models:
     logger.critical("FAILED MODELS: {}".format(", ".join(failed_models)))
 
+logger.info("#" * 25)
 logger.info("Test datasets")
 failed_datasets = []
 for idx, dataset_name in enumerate(info["corpora"]):
@@ -39,8 +40,19 @@ for idx, dataset_name in enumerate(info["corpora"]):
             raise Exception("empty dataset")
 
     except Exception as e:
-        logger.critical(e)
+        logger.exception(e)
         failed_datasets.append(dataset_name)
 
 if failed_datasets:
     logger.critical("FAILED DATASETS: {}".format(", ".join(failed_datasets)))
+
+logger.info("#" * 25)
+if len(failed_datasets + failed_models) == 0:
+    logger.info("Successful finished without errors!")
+
+else:
+
+    logger.critical("FIX THIS:")
+    logger.critical("Models: {}".format(", ".join(failed_models)))
+    logger.critical("Datasets: {}".format(", ".join(failed_datasets)))
+logger.info("#" * 25)
