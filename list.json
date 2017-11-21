@@ -1,14 +1,14 @@
 {
 	"corpora": {
 		"quora-duplicate-questions": {
-			"description": "over 400,000 lines of potential question duplicate pairs. Each line contains IDs for each question in the pair, the full text for each question, and a binary value that indicates whether the line truly contains a duplicate pair.",
+			"description": "Over 400,000 lines of potential question duplicate pairs. Each line contains IDs for each question in the pair, the full text for each question, and a binary value that indicates whether the line truly contains a duplicate pair.",
 			"checksum": "d7cfa7fbc6e2ec71ab74c495586c6365",
 			"file_name": "quora-duplicate-questions.gz",
 			"source": "https://data.quora.com/First-Quora-Dataset-Release-Question-Pairs",
 			"parts": 1
 		},
 		"wiki-en": {
-			"description": "Extracted Wikipedia dump from October 2017. Produced by `python -m gensim.scripts.segment_wiki -f enwiki-20171001-pages-articles.xml.bz2 -o wiki-en.gz`",
+			"description": "Extracted Wikipedia dump from October 2017. Produced by `python -m gensim.scripts.segment_wiki -f enwiki-20171001-pages-articles.xml.bz2 -o wiki-en.gz`.",
 			"checksum-0": "a7d7d7fd41ea7e2d7fa32ec1bb640d71",
 			"checksum-1": "b2683e3356ffbca3b6c2dca6e9801f9f",
 			"checksum-2": "c5cde2a9ae77b3c4ebce804f6df542c2",
@@ -18,35 +18,35 @@
 			"parts": 4
 		},
 		"text8": {
-			"description": "Cleaned small sample from wikipedia",
+			"description": "Cleaned small sample from Wikipedia.",
 			"checksum": "68799af40b6bda07dfa47a32612e5364",
 			"file_name": "text8.gz",
-			"source": "http://mattmahoney.net/dc/text8.zip",
+			"source": "http://mattmahoney.net/dc/textdata",
 			"parts": 1
 		},
 		"fake-news": {
-			"description": "It contains text and metadata scraped from 244 websites tagged as 'bullshit' here by the BS Detector Chrome Extension by Daniel Sieradski.",
+			"description": "News dataset, contains text and metadata from 244 websites and represents 12,999 posts in total from the past 30 days. The data was pulled using the webhose.io API, because it's coming from their crawler, not all websites identified by the BS Detector are present in this dataset. Data sources that were missing a label were simply assigned a label of 'bs'. There are (ostensibly) no genuine, reliable, or trustworthy news sources represented in this dataset (so far), so don't trust anything you read.",
 			"checksum": "5e64e942df13219465927f92dcefd5fe",
 			"file_name": "fake-news.gz",
-			"source": "Kaggle",
+			"source": "https://www.kaggle.com/mrisdal/fake-news",
 			"parts": 1
 		},
 		"20-newsgroups": {
-			"description": "The 20 Newsgroups data set is a collection of approximately 20,000 newsgroup documents, partitioned (nearly) evenly across 20 different newsgroups",
+			"description": "Collection of approximately 20,000 newsgroup documents, partitioned (nearly) evenly across 20 different newsgroups.",
 			"checksum": "c92fd4f6640a86d5ba89eaad818a9891",
 			"file_name": "20-newsgroups.gz",
 			"source": "http://qwone.com/~jason/20Newsgroups/",
 			"parts": 1
 		},
 		"__testing_matrix-synopsis": {
-			"description": "Synopsis of the movie matrix",
+			"description": "[THIS IS ONLY FOR TESTING] Synopsis of the movie matrix.",
 			"checksum": "1767ac93a089b43899d54944b07d9dc5",
 			"file_name": "__testing_matrix-synopsis.gz",
 			"source": "http://www.imdb.com/title/tt0133093/plotsummary?ref_=ttpl_pl_syn#synopsis",
 			"parts": 1
 		},
 		"__testing_multipart-matrix-synopsis": {
-			"description": "Synopsis of the movie matrix",
+			"description": "[THIS IS ONLY FOR TESTING] Synopsis of the movie matrix.",
 			"checksum-0": "c8b0c7d8cf562b1b632c262a173ac338",
 			"checksum-1": "5ff7fc6818e9a5d9bc1cf12c35ed8b96",
 			"checksum-2": "966db9d274d125beaac7987202076cba",
@@ -57,7 +57,7 @@
 	},
 	"models": {
 		"word2vec-google-news-300": {
-			"description": "Pre-trained vectors trained on part of Google News dataset (about 100 billion words). The model contains 300-dimensional vectors for 3 million words and phrases. The phrases were obtained using a simple data-driven approach described in 'Distributed Representations of Words and Phrases and their Compositionality', https://code.google.com/archive/p/word2vec/",
+			"description": "Pre-trained vectors trained on part of Google News dataset (about 100 billion words). The model contains 300-dimensional vectors for 3 million words and phrases. The phrases were obtained using a simple data-driven approach described in 'Distributed Representations of Words and Phrases and their Compositionality' (https://code.google.com/archive/p/word2vec/).",
 			"parameters": "dimension = 300",
 			"papers": "https://arxiv.org/abs/1301.3781, https://arxiv.org/abs/1310.4546, https://www.microsoft.com/en-us/research/publication/linguistic-regularities-in-continuous-space-word-representations/?from=http%3A%2F%2Fresearch.microsoft.com%2Fpubs%2F189726%2Frvecs.pdf",
 			"checksum": "a5e5354d40acb95f9ec66d5977d140ef",
@@ -65,81 +65,81 @@
 			"parts": 1
 		},
 		"glove-wiki-gigaword-50": {
-			"description": "Pre-trained vectors ,Wikipedia 2014 + Gigaword 5,6B tokens, 400K vocab, uncased. https://nlp.stanford.edu/projects/glove/",
+			"description": "Pre-trained vectors based on Wikipedia 2014 + Gigaword, 5.6B tokens, 400K vocab, uncased (https://nlp.stanford.edu/projects/glove/).",
 			"parameters": "dimension = 50",
-			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-50.txt`",
+			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-50.txt`.",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
 			"checksum": "c289bc5d7f2f02c6dc9f2f9b67641813",
 			"file_name": "glove-wiki-gigaword-50.gz",
 			"parts": 1
 		},
 		"glove-wiki-gigaword-100":{
-			"description": "Pre-trained vectors ,Wikipedia 2014 + Gigaword 5,6B tokens, 400K vocab, uncased. https://nlp.stanford.edu/projects/glove/",
+			"description": "Pre-trained vectors based on Wikipedia 2014 + Gigaword 5.6B tokens, 400K vocab, uncased (https://nlp.stanford.edu/projects/glove/).",
 			"parameters": "dimensions = 100",
-			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-100.txt`",
+			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-100.txt`.",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
 			"checksum": "40ec481866001177b8cd4cb0df92924f",
 			"file_name": "glove-wiki-gigaword-100.gz",
 			"parts": 1
 		},
 		"glove-wiki-gigaword-200":{
-			"description": "Pre-trained vectors ,Wikipedia 2014 + Gigaword 5,6B tokens, 400K vocab, uncased. https://nlp.stanford.edu/projects/glove/",
+			"description": "Pre-trained vectors based on Wikipedia 2014 + Gigaword, 5.6B tokens, 400K vocab, uncased (https://nlp.stanford.edu/projects/glove/).",
 			"parameters": "dimentions = 200",
-			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-200.txt`",
+			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-200.txt`.",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
 			"checksum": "59652db361b7a87ee73834a6c391dfc1",
 			"file_name": "glove-wiki-gigaword-200.gz",
 			"parts": 1
 		},
 		"glove-wiki-gigaword-300":{
-			"description": "Pre-trained vectors, Wikipedia 2014 + Gigaword 5, 6B tokens, 400K vocab, uncased. https://nlp.stanford.edu/projects/glove/",
+			"description": "Pre-trained vectors based on Wikipedia 2014 + Gigaword, 5.6B tokens, 400K vocab, uncased (https://nlp.stanford.edu/projects/glove/).",
 			"parameters": "dimensions = 300",
-			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-300.txt`",
+			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-300.txt`.",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
 			"checksum": "29e9329ac2241937d55b852e8284e89b",
 			"file_name": "glove-wiki-gigaword-300.gz",
 			"parts": 1
 		},
 		"glove-twitter-25":{
-			"description": "Pre-trained vectors, 2B tweets, 27B tokens, 1.2M vocab, uncased. https://nlp.stanford.edu/projects/glove/",
+			"description": "Pre-trained vectors based on 2B tweets, 27B tokens, 1.2M vocab, uncased (https://nlp.stanford.edu/projects/glove/).",
 			"parameters": "dimensions = 25",
-			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-25.txt`",
+			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-25.txt`.",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
 			"checksum": "50db0211d7e7a2dcd362c6b774762793",
 			"file_name": "glove-twitter-25.gz",
 			"parts": 1
 		},
 		"glove-twitter-50":{
-			"description": "Pre-trained vectors, 2B tweets, 27B tokens, 1.2M vocab, uncased. https://nlp.stanford.edu/projects/glove/",
+			"description": "Pre-trained vectors based on 2B tweets, 27B tokens, 1.2M vocab, uncased (https://nlp.stanford.edu/projects/glove/)",
 			"parameters": "dimensions = 50",
-			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-50.txt`",
+			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-50.txt`.",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
 			"checksum": "c168f18641f8c8a00fe30984c4799b2b",
 			"file_name": "glove-twitter-50.gz",
 			"parts": 1
 		},
 		"glove-twitter-100":{
-			"description": "Pre-trained vectors, 2B tweets, 27B tokens, 1.2M vocab, uncased. https://nlp.stanford.edu/projects/glove/",
+			"description": "Pre-trained vectors based on  2B tweets, 27B tokens, 1.2M vocab, uncased (https://nlp.stanford.edu/projects/glove/)",
 			"parameters": "dimensions = 100",
-			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-100.txt`",
+			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-100.txt`.",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
 			"checksum": "b04f7bed38756d64cf55b58ce7e97b15",
 			"file_name": "glove-twitter-100.gz",
 			"parts": 1
 		},
 		"glove-twitter-200":{
-			"description": "Pre-trained vectors, 2B tweets, 27B tokens, 1.2M vocab, uncased. https://nlp.stanford.edu/projects/glove/",
+			"description": "Pre-trained vectors based on 2B tweets, 27B tokens, 1.2M vocab, uncased (https://nlp.stanford.edu/projects/glove/).",
 			"parameters": "dimensions = 200",
-			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-200.txt`",
+			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-200.txt`.",
 			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
 			"checksum": "e52e8392d1860b95d5308a525817d8f9",
 			"file_name": "glove-twitter-200.gz",
 			"parts": 1
 		},
 		"__testing_word2vec-matrix-synopsis":{
-			"description": "Word vecrors of the movie matrix",
+			"description": "[THIS IS ONLY FOR TESTING] Word vecrors of the movie matrix.",
 			"parameters": "dimentions = 50",
-			"preprocessing": "Converted to w2v using a preprocessed corpus. Converted to w2v format with `python3.5 -m gensim.models.word2vec -train <input_filename> -iter 50 -output <output_filename>`",
+			"preprocessing": "Converted to w2v using a preprocessed corpus. Converted to w2v format with `python3.5 -m gensim.models.word2vec -train <input_filename> -iter 50 -output <output_filename>`.",
 			"papers": "",
 			"checksum": "534dcb8b56a360977a269b7bfc62d124",
 			"file_name": "__testing_word2vec-matrix-synopsis.gz",
