@@ -7,13 +7,13 @@
 			"source": "https://data.quora.com/First-Quora-Dataset-Release-Question-Pairs",
 			"parts": 1
 		},
-		"wiki-en": {
-			"description": "Extracted Wikipedia dump from October 2017. Produced by `python -m gensim.scripts.segment_wiki -f enwiki-20171001-pages-articles.xml.bz2 -o wiki-en.gz`.",
+		"wiki-english-20171001": {
+			"description": "Extracted Wikipedia dump from October 2017. Produced by `python -m gensim.scripts.segment_wiki -f enwiki-20171001-pages-articles.xml.bz2 -o wiki-en.gz`",
 			"checksum-0": "a7d7d7fd41ea7e2d7fa32ec1bb640d71",
 			"checksum-1": "b2683e3356ffbca3b6c2dca6e9801f9f",
 			"checksum-2": "c5cde2a9ae77b3c4ebce804f6df542c2",
 			"checksum-3": "00b71144ed5e3aeeb885de84f7452b81",
-			"file_name": "wiki-en.gz",
+			"file_name": "wiki-english-20171001.gz",
 			"source": "https://dumps.wikimedia.org/enwiki/20171001/",
 			"parts": 4
 		},
