@@ -1,48 +1,114 @@
 {
 	"corpora": {
 		"quora-duplicate-questions": {
+			"num_rows": 404290,
+			"row_format": "dict",
+			"size": "21684784 (~21MB)",
+			"reader": "https://github.com/RaRe-Technologies/gensim-data/releases/download/quora-duplicate-questions/__init__.py",
+			"license": "probably https://www.quora.com/about/tos",
+			"fields": {
+				"question1": "the full text of each question",
+				"question2": "the full text of each question",
+				"qid1": "unique ids of each question",
+				"qid2": "unique ids of each question",
+				"id": "the id of a training set question pair",
+				"is_duplicate": "the target variable, set to 1 if question1 and question2 have essentially the same meaning, and 0 otherwise"
+			},
 			"description": "Over 400,000 lines of potential question duplicate pairs. Each line contains IDs for each question in the pair, the full text for each question, and a binary value that indicates whether the line truly contains a duplicate pair.",
 			"checksum": "d7cfa7fbc6e2ec71ab74c495586c6365",
 			"file_name": "quora-duplicate-questions.gz",
-			"source": "https://data.quora.com/First-Quora-Dataset-Release-Question-Pairs",
+			"links": ["https://data.quora.com/First-Quora-Dataset-Release-Question-Pairs"],
 			"parts": 1
 		},
 		"wiki-english-20171001": {
+			"num_rows": 4924894,
+			"row_format": "dict",
+			"size": "6516051717 (~6.1GB)",
+			"reader": "https://github.com/RaRe-Technologies/gensim-data/releases/download/wiki-english-20171001/__init__.py",
+			"license": "https://dumps.wikimedia.org/legal.html",
+			"fields": {
+				"section_texts": "list of body of sections",
+				"section_titles": "list of titles of sections",
+				"title": "Title of wiki article"
+			},
 			"description": "Extracted Wikipedia dump from October 2017. Produced by `python -m gensim.scripts.segment_wiki -f enwiki-20171001-pages-articles.xml.bz2 -o wiki-en.gz`",
 			"checksum-0": "a7d7d7fd41ea7e2d7fa32ec1bb640d71",
 			"checksum-1": "b2683e3356ffbca3b6c2dca6e9801f9f",
 			"checksum-2": "c5cde2a9ae77b3c4ebce804f6df542c2",
 			"checksum-3": "00b71144ed5e3aeeb885de84f7452b81",
 			"file_name": "wiki-english-20171001.gz",
-			"source": "https://dumps.wikimedia.org/enwiki/20171001/",
+			"links": ["https://dumps.wikimedia.org/enwiki/20171001/"],
 			"parts": 4
 		},
 		"text8": {
+			"num_rows": 1701,
+			"row_format": "list of str (tokens)",
+			"size": "33182058 (~32MB)",
+			"reader": "https://github.com/RaRe-Technologies/gensim-data/releases/download/text8/__init__.py",
+			"license": "not found",
 			"description": "Cleaned small sample from Wikipedia.",
 			"checksum": "68799af40b6bda07dfa47a32612e5364",
 			"file_name": "text8.gz",
-			"source": "http://mattmahoney.net/dc/textdata",
+			"links": ["http://mattmahoney.net/dc/textdata.html"],
 			"parts": 1
 		},
 		"fake-news": {
+			"num_rows": 12999,
+			"row_format": "dict",
+			"size": "20102776 (~20MB)",
+			"reader": "https://github.com/RaRe-Technologies/gensim-data/releases/download/fake-news/__init__.py",
+			"license": "https://creativecommons.org/publicdomain/zero/1.0/",
+			"fields": {
+				"crawled": "date the story was archived",
+				"ord_in_thread": "",
+				"published": "date published",
+				"participants_count": "number of participants",
+				"shares": "number of Facebook shares",
+				"replies_count": "number of replies",
+				"main_img_url": "image from story",
+				"spam_score": "data from webhose.io",
+				"uuid": "unique identifier",
+				"language": "data from webhose.io",
+				"title": "title of story",
+				"country": "data from webhose.io",
+				"domain_rank": "data from webhose.io",
+				"author": "author of story",
+				"comments": "number of Facebook comments",
+				"site_url": "site URL from BS detector",
+				"text": "text of story",
+				"thread_title": "",
+				"type": "type of website (label from BS detector)",
+				"likes": "number of Facebook likes"
+			},
 			"description": "News dataset, contains text and metadata from 244 websites and represents 12,999 posts in total from the past 30 days. The data was pulled using the webhose.io API, because it's coming from their crawler, not all websites identified by the BS Detector are present in this dataset. Data sources that were missing a label were simply assigned a label of 'bs'. There are (ostensibly) no genuine, reliable, or trustworthy news sources represented in this dataset (so far), so don't trust anything you read.",
 			"checksum": "5e64e942df13219465927f92dcefd5fe",
 			"file_name": "fake-news.gz",
-			"source": "https://www.kaggle.com/mrisdal/fake-news",
+			"links": ["https://www.kaggle.com/mrisdal/fake-news"],
 			"parts": 1
 		},
 		"20-newsgroups": {
+			"num_rows": 18846,
+			"row_format": "dict",
+			"size": "14483581 (~14MB)",
+			"reader": "https://github.com/RaRe-Technologies/gensim-data/releases/download/20-newsgroups/__init__.py",
+			"license": "not found",
+			"fields": {
+				"topic": "name of topic (20 variant of possible values)",
+				"set": "marker of original split (possible values 'train' and 'test')",
+				"data": "",
+				"id": "original id inferred from folder name"
+			},
 			"description": "Collection of approximately 20,000 newsgroup documents, partitioned (nearly) evenly across 20 different newsgroups.",
 			"checksum": "c92fd4f6640a86d5ba89eaad818a9891",
 			"file_name": "20-newsgroups.gz",
-			"source": "http://qwone.com/~jason/20Newsgroups/",
+			"links": ["http://qwone.com/~jason/20Newsgroups/"],
 			"parts": 1
 		},
 		"__testing_matrix-synopsis": {
 			"description": "[THIS IS ONLY FOR TESTING] Synopsis of the movie matrix.",
 			"checksum": "1767ac93a089b43899d54944b07d9dc5",
 			"file_name": "__testing_matrix-synopsis.gz",
-			"source": "http://www.imdb.com/title/tt0133093/plotsummary?ref_=ttpl_pl_syn#synopsis",
+			"links": ["http://www.imdb.com/title/tt0133093/plotsummary?ref_=ttpl_pl_syn#synopsis"],
 			"parts": 1
 		},
 		"__testing_multipart-matrix-synopsis": {
@@ -51,96 +117,170 @@
 			"checksum-1": "5ff7fc6818e9a5d9bc1cf12c35ed8b96",
 			"checksum-2": "966db9d274d125beaac7987202076cba",
 			"file_name": "__testing_multipart-matrix-synopsis.gz",
-			"source": "http://www.imdb.com/title/tt0133093/plotsummary?ref_=ttpl_pl_syn#synopsis",
+			"links": ["http://www.imdb.com/title/tt0133093/plotsummary?ref_=ttpl_pl_syn#synopsis"],
 			"parts": 3
 		}
 	},
 	"models": {
 		"word2vec-google-news-300": {
+			"type": "word2vec",
+			"num_vectors": 3000000,
+			"size": "1743563840 (~1.7GB)",
+			"base_dataset": "Google News (about 100 billion words)",
+			"reader": "https://github.com/RaRe-Technologies/gensim-data/releases/download/word2vec-google-news-300/__init__.py",
+			"license": "not found",
+			"parameters": {
+				"dimension": 300
+			},
 			"description": "Pre-trained vectors trained on part of Google News dataset (about 100 billion words). The model contains 300-dimensional vectors for 3 million words and phrases. The phrases were obtained using a simple data-driven approach described in 'Distributed Representations of Words and Phrases and their Compositionality' (https://code.google.com/archive/p/word2vec/).",
-			"parameters": "dimension = 300",
-			"papers": "https://arxiv.org/abs/1301.3781, https://arxiv.org/abs/1310.4546, https://www.microsoft.com/en-us/research/publication/linguistic-regularities-in-continuous-space-word-representations/?from=http%3A%2F%2Fresearch.microsoft.com%2Fpubs%2F189726%2Frvecs.pdf",
+			"links": ["https://code.google.com/archive/p/word2vec/", "https://arxiv.org/abs/1301.3781", "https://arxiv.org/abs/1310.4546", "https://www.microsoft.com/en-us/research/publication/linguistic-regularities-in-continuous-space-word-representations/?from=http%3A%2F%2Fresearch.microsoft.com%2Fpubs%2F189726%2Frvecs.pdf"],
 			"checksum": "a5e5354d40acb95f9ec66d5977d140ef",
 			"file_name": "word2vec-google-news-300.gz",
 			"parts": 1
 		},
 		"glove-wiki-gigaword-50": {
+			"type": "glove",
+			"num_vectors": 400000,
+			"size": "69182535 (~66MB)",
+			"base_dataset": "Wikipedia 2014 + Gigaword 5 (6B tokens, uncased)",
+			"reader": "https://github.com/RaRe-Technologies/gensim-data/releases/download/glove-wiki-gigaword-50/__init__.py",
+			"license": "http://opendatacommons.org/licenses/pddl/",
+			"parameters": {
+				"dimension": 50
+			},
 			"description": "Pre-trained vectors based on Wikipedia 2014 + Gigaword, 5.6B tokens, 400K vocab, uncased (https://nlp.stanford.edu/projects/glove/).",
-			"parameters": "dimension = 50",
 			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-50.txt`.",
-			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
+			"links": ["https://nlp.stanford.edu/projects/glove/", "https://nlp.stanford.edu/pubs/glove.pdf"],
 			"checksum": "c289bc5d7f2f02c6dc9f2f9b67641813",
 			"file_name": "glove-wiki-gigaword-50.gz",
 			"parts": 1
 		},
 		"glove-wiki-gigaword-100":{
+			"type": "glove",
+			"num_vectors": 400000,
+			"size": "134300434 (~129MB)",
+			"base_dataset": "Wikipedia 2014 + Gigaword 5 (6B tokens, uncased)",
+			"reader": "https://github.com/RaRe-Technologies/gensim-data/releases/download/glove-wiki-gigaword-100/__init__.py",
+			"license": "http://opendatacommons.org/licenses/pddl/",
+			"parameters": {
+				"dimension": 100
+			},
 			"description": "Pre-trained vectors based on Wikipedia 2014 + Gigaword 5.6B tokens, 400K vocab, uncased (https://nlp.stanford.edu/projects/glove/).",
-			"parameters": "dimensions = 100",
 			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-100.txt`.",
-			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
+			"links": ["https://nlp.stanford.edu/projects/glove/", "https://nlp.stanford.edu/pubs/glove.pdf"],
 			"checksum": "40ec481866001177b8cd4cb0df92924f",
 			"file_name": "glove-wiki-gigaword-100.gz",
 			"parts": 1
 		},
 		"glove-wiki-gigaword-200":{
+			"type": "glove",
+			"num_vectors": 400000,
+			"size": "264336934 (~253MB)",
+			"base_dataset": "Wikipedia 2014 + Gigaword 5 (6B tokens, uncased)",
+			"reader": "https://github.com/RaRe-Technologies/gensim-data/releases/download/glove-wiki-gigaword-200/__init__.py",
+			"license": "http://opendatacommons.org/licenses/pddl/",
+			"parameters": {
+				"dimension": 200
+			},
 			"description": "Pre-trained vectors based on Wikipedia 2014 + Gigaword, 5.6B tokens, 400K vocab, uncased (https://nlp.stanford.edu/projects/glove/).",
-			"parameters": "dimentions = 200",
 			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-200.txt`.",
-			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
+			"links": ["https://nlp.stanford.edu/projects/glove/", "https://nlp.stanford.edu/pubs/glove.pdf"],
 			"checksum": "59652db361b7a87ee73834a6c391dfc1",
 			"file_name": "glove-wiki-gigaword-200.gz",
 			"parts": 1
 		},
 		"glove-wiki-gigaword-300":{
+			"type": "glove",
+			"num_vectors": 400000,
+			"size": "394362229 (~377MB)",
+			"base_dataset": "Wikipedia 2014 + Gigaword 5 (6B tokens, uncased)",
+			"reader": "https://github.com/RaRe-Technologies/gensim-data/releases/download/glove-wiki-gigaword-300/__init__.py",
+			"license": "http://opendatacommons.org/licenses/pddl/",
+			"parameters": {
+				"dimension": 300
+			},
 			"description": "Pre-trained vectors based on Wikipedia 2014 + Gigaword, 5.6B tokens, 400K vocab, uncased (https://nlp.stanford.edu/projects/glove/).",
-			"parameters": "dimensions = 300",
 			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-300.txt`.",
-			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
+			"links": ["https://nlp.stanford.edu/projects/glove/", "https://nlp.stanford.edu/pubs/glove.pdf"],
 			"checksum": "29e9329ac2241937d55b852e8284e89b",
 			"file_name": "glove-wiki-gigaword-300.gz",
 			"parts": 1
 		},
 		"glove-twitter-25":{
+			"type": "glove",
+			"num_vectors": 1193514,
+			"size": "109885004 (~105MB)",
+			"base_dataset": "Twitter (2B tweets, 27B tokens, 1.2M vocab, uncased)",
+			"reader": "https://github.com/RaRe-Technologies/gensim-data/releases/download/glove-twitter-25/__init__.py",
+			"license": "http://opendatacommons.org/licenses/pddl/",
+			"parameters": {
+				"dimension": 25
+			},
 			"description": "Pre-trained vectors based on 2B tweets, 27B tokens, 1.2M vocab, uncased (https://nlp.stanford.edu/projects/glove/).",
-			"parameters": "dimensions = 25",
 			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-25.txt`.",
-			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
+			"links": ["https://nlp.stanford.edu/projects/glove/", "https://nlp.stanford.edu/pubs/glove.pdf"],
 			"checksum": "50db0211d7e7a2dcd362c6b774762793",
 			"file_name": "glove-twitter-25.gz",
 			"parts": 1
 		},
 		"glove-twitter-50":{
+			"type": "glove",
+			"num_vectors": 1193514,
+			"size": "209216938 (~200MB)",
+			"base_dataset": "Twitter (2B tweets, 27B tokens, 1.2M vocab, uncased)",
+			"reader": "https://github.com/RaRe-Technologies/gensim-data/releases/download/glove-twitter-50/__init__.py",
+			"license": "http://opendatacommons.org/licenses/pddl/",
+			"parameters": {
+				"dimension": 50
+			},
 			"description": "Pre-trained vectors based on 2B tweets, 27B tokens, 1.2M vocab, uncased (https://nlp.stanford.edu/projects/glove/)",
-			"parameters": "dimensions = 50",
 			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-50.txt`.",
-			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
+			"links": ["https://nlp.stanford.edu/projects/glove/", "https://nlp.stanford.edu/pubs/glove.pdf"],
 			"checksum": "c168f18641f8c8a00fe30984c4799b2b",
 			"file_name": "glove-twitter-50.gz",
 			"parts": 1
 		},
 		"glove-twitter-100":{
+			"type": "glove",
+			"num_vectors": 1193514,
+			"size": "405932991 (~388MB)",
+			"base_dataset": "Twitter (2B tweets, 27B tokens, 1.2M vocab, uncased)",
+			"reader": "https://github.com/RaRe-Technologies/gensim-data/releases/download/glove-twitter-100/__init__.py",
+			"license": "http://opendatacommons.org/licenses/pddl/",
+			"parameters": {
+				"dimension": 100
+			},
 			"description": "Pre-trained vectors based on  2B tweets, 27B tokens, 1.2M vocab, uncased (https://nlp.stanford.edu/projects/glove/)",
-			"parameters": "dimensions = 100",
 			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-100.txt`.",
-			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
+			"links": ["https://nlp.stanford.edu/projects/glove/", "https://nlp.stanford.edu/pubs/glove.pdf"],
 			"checksum": "b04f7bed38756d64cf55b58ce7e97b15",
 			"file_name": "glove-twitter-100.gz",
 			"parts": 1
 		},
 		"glove-twitter-200":{
+			"type": "glove",
+			"num_vectors": 1193514,
+			"size": "795373100 (~759MB)",
+			"base_dataset": "Twitter (2B tweets, 27B tokens, 1.2M vocab, uncased)",
+			"reader": "https://github.com/RaRe-Technologies/gensim-data/releases/download/glove-twitter-200/__init__.py",
+			"license": "http://opendatacommons.org/licenses/pddl/",
+			"parameters": {
+				"dimension": 200
+			},
 			"description": "Pre-trained vectors based on 2B tweets, 27B tokens, 1.2M vocab, uncased (https://nlp.stanford.edu/projects/glove/).",
-			"parameters": "dimensions = 200",
 			"preprocessing": "Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-200.txt`.",
-			"papers": "https://nlp.stanford.edu/pubs/glove.pdf",
+			"links": ["https://nlp.stanford.edu/projects/glove/", "https://nlp.stanford.edu/pubs/glove.pdf"],
 			"checksum": "e52e8392d1860b95d5308a525817d8f9",
 			"file_name": "glove-twitter-200.gz",
 			"parts": 1
 		},
 		"__testing_word2vec-matrix-synopsis":{
 			"description": "[THIS IS ONLY FOR TESTING] Word vecrors of the movie matrix.",
-			"parameters": "dimentions = 50",
+			"parameters": {
+				"dimentions": 50
+			},
 			"preprocessing": "Converted to w2v using a preprocessed corpus. Converted to w2v format with `python3.5 -m gensim.models.word2vec -train <input_filename> -iter 50 -output <output_filename>`.",
-			"papers": "",
+			"links": [],
 			"checksum": "534dcb8b56a360977a269b7bfc62d124",
 			"file_name": "__testing_word2vec-matrix-synopsis.gz",
 			"parts": 1
