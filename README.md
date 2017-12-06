@@ -4,9 +4,9 @@ This repository contains the pre-trained models and text corpora for the [Gensim
 
 💡 When you use the Gensim download API, **all data will be stored in your `~/gensim-data` folder**.
 
-This repository stores the actual (large) data files as attachments in [github-releases](https://github.com/RaRe-Technologies/gensim-data/releases).
+This repository stores the actual (large) data files as attachments in its [releases](https://github.com/RaRe-Technologies/gensim-data/releases) on Github.
 
-💡 **Each dataset comes with its own license, which the users should study carefully before using the dataset!**
+🔴 **Each dataset comes with its own license, which the users should study carefully before using the dataset!**
 
 ## Quickstart
 
