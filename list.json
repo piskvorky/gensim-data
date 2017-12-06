@@ -3,7 +3,7 @@
 		"quora-duplicate-questions": {
 			"num_records": 404290,
 			"record_format": "dict",
-			"size": 21684784,
+			"file_size": 21684784,
 			"reader_code": "https://github.com/RaRe-Technologies/gensim-data/releases/download/quora-duplicate-questions/__init__.py",
 			"license": "probably https://www.quora.com/about/tos",
 			"fields": {
@@ -23,7 +23,7 @@
 		"wiki-english-20171001": {
 			"num_records": 4924894,
 			"record_format": "dict",
-			"size": 6516051717,
+			"file_size": 6516051717,
 			"reader_code": "https://github.com/RaRe-Technologies/gensim-data/releases/download/wiki-english-20171001/__init__.py",
 			"license": "https://dumps.wikimedia.org/legal.html",
 			"fields": {
@@ -43,7 +43,7 @@
 		"text8": {
 			"num_records": 1701,
 			"record_format": "list of str (tokens)",
-			"size": 33182058,
+			"file_size": 33182058,
 			"reader_code": "https://github.com/RaRe-Technologies/gensim-data/releases/download/text8/__init__.py",
 			"license": "not found",
 			"description": "First 100,000,000 bytes of plain text from Wikipedia. Used for testing purposes; see wiki-english-* for proper full Wikipedia datasets.",
@@ -55,7 +55,7 @@
 		"fake-news": {
 			"num_records": 12999,
 			"record_format": "dict",
-			"size": 20102776,
+			"file_size": 20102776,
 			"reader_code": "https://github.com/RaRe-Technologies/gensim-data/releases/download/fake-news/__init__.py",
 			"license": "https://creativecommons.org/publicdomain/zero/1.0/",
 			"fields": {
@@ -89,7 +89,7 @@
 		"20-newsgroups": {
 			"num_records": 18846,
 			"record_format": "dict",
-			"size": 14483581,
+			"file_size": 14483581,
 			"reader_code": "https://github.com/RaRe-Technologies/gensim-data/releases/download/20-newsgroups/__init__.py",
 			"license": "not found",
 			"fields": {
@@ -123,9 +123,8 @@
 	},
 	"models": {
 		"word2vec-google-news-300": {
-			"type": "word2vec",
-			"num_vectors": 3000000,
-			"size": 1743563840,
+			"num_records": 3000000,
+			"file_size": 1743563840,
 			"base_dataset": "Google News (about 100 billion words)",
 			"reader_code": "https://github.com/RaRe-Technologies/gensim-data/releases/download/word2vec-google-news-300/__init__.py",
 			"license": "not found",
@@ -139,9 +138,8 @@
 			"parts": 1
 		},
 		"glove-wiki-gigaword-50": {
-			"type": "glove",
-			"num_vectors": 400000,
-			"size": 69182535,
+			"num_records": 400000,
+			"file_size": 69182535,
 			"base_dataset": "Wikipedia 2014 + Gigaword 5 (6B tokens, uncased)",
 			"reader_code": "https://github.com/RaRe-Technologies/gensim-data/releases/download/glove-wiki-gigaword-50/__init__.py",
 			"license": "http://opendatacommons.org/licenses/pddl/",
@@ -155,10 +153,9 @@
 			"file_name": "glove-wiki-gigaword-50.gz",
 			"parts": 1
 		},
-		"glove-wiki-gigaword-100":{
-			"type": "glove",
-			"num_vectors": 400000,
-			"size": 134300434,
+		"glove-wiki-gigaword-100": {
+			"num_records": 400000,
+			"file_size": 134300434,
 			"base_dataset": "Wikipedia 2014 + Gigaword 5 (6B tokens, uncased)",
 			"reader_code": "https://github.com/RaRe-Technologies/gensim-data/releases/download/glove-wiki-gigaword-100/__init__.py",
 			"license": "http://opendatacommons.org/licenses/pddl/",
@@ -172,10 +169,9 @@
 			"file_name": "glove-wiki-gigaword-100.gz",
 			"parts": 1
 		},
-		"glove-wiki-gigaword-200":{
-			"type": "glove",
-			"num_vectors": 400000,
-			"size": 264336934,
+		"glove-wiki-gigaword-200": {
+			"num_records": 400000,
+			"file_size": 264336934,
 			"base_dataset": "Wikipedia 2014 + Gigaword 5 (6B tokens, uncased)",
 			"reader_code": "https://github.com/RaRe-Technologies/gensim-data/releases/download/glove-wiki-gigaword-200/__init__.py",
 			"license": "http://opendatacommons.org/licenses/pddl/",
@@ -189,10 +185,9 @@
 			"file_name": "glove-wiki-gigaword-200.gz",
 			"parts": 1
 		},
-		"glove-wiki-gigaword-300":{
-			"type": "glove",
-			"num_vectors": 400000,
-			"size": 394362229,
+		"glove-wiki-gigaword-300": {
+			"num_records": 400000,
+			"file_size": 394362229,
 			"base_dataset": "Wikipedia 2014 + Gigaword 5 (6B tokens, uncased)",
 			"reader_code": "https://github.com/RaRe-Technologies/gensim-data/releases/download/glove-wiki-gigaword-300/__init__.py",
 			"license": "http://opendatacommons.org/licenses/pddl/",
@@ -206,10 +201,9 @@
 			"file_name": "glove-wiki-gigaword-300.gz",
 			"parts": 1
 		},
-		"glove-twitter-25":{
-			"type": "glove",
-			"num_vectors": 1193514,
-			"size": 109885004,
+		"glove-twitter-25": {
+			"num_records": 1193514,
+			"file_size": 109885004,
 			"base_dataset": "Twitter (2B tweets, 27B tokens, 1.2M vocab, uncased)",
 			"reader_code": "https://github.com/RaRe-Technologies/gensim-data/releases/download/glove-twitter-25/__init__.py",
 			"license": "http://opendatacommons.org/licenses/pddl/",
@@ -223,10 +217,9 @@
 			"file_name": "glove-twitter-25.gz",
 			"parts": 1
 		},
-		"glove-twitter-50":{
-			"type": "glove",
-			"num_vectors": 1193514,
-			"size": 209216938,
+		"glove-twitter-50": {
+			"num_records": 1193514,
+			"file_size": 209216938,
 			"base_dataset": "Twitter (2B tweets, 27B tokens, 1.2M vocab, uncased)",
 			"reader_code": "https://github.com/RaRe-Technologies/gensim-data/releases/download/glove-twitter-50/__init__.py",
 			"license": "http://opendatacommons.org/licenses/pddl/",
@@ -240,10 +233,9 @@
 			"file_name": "glove-twitter-50.gz",
 			"parts": 1
 		},
-		"glove-twitter-100":{
-			"type": "glove",
-			"num_vectors": 1193514,
-			"size": 405932991,
+		"glove-twitter-100": {
+			"num_records": 1193514,
+			"file_size": 405932991,
 			"base_dataset": "Twitter (2B tweets, 27B tokens, 1.2M vocab, uncased)",
 			"reader_code": "https://github.com/RaRe-Technologies/gensim-data/releases/download/glove-twitter-100/__init__.py",
 			"license": "http://opendatacommons.org/licenses/pddl/",
@@ -257,10 +249,9 @@
 			"file_name": "glove-twitter-100.gz",
 			"parts": 1
 		},
-		"glove-twitter-200":{
-			"type": "glove",
-			"num_vectors": 1193514,
-			"size": 795373100,
+		"glove-twitter-200": {
+			"num_records": 1193514,
+			"file_size": 795373100,
 			"base_dataset": "Twitter (2B tweets, 27B tokens, 1.2M vocab, uncased)",
 			"reader_code": "https://github.com/RaRe-Technologies/gensim-data/releases/download/glove-twitter-200/__init__.py",
 			"license": "http://opendatacommons.org/licenses/pddl/",
@@ -274,7 +265,7 @@
 			"file_name": "glove-twitter-200.gz",
 			"parts": 1
 		},
-		"__testing_word2vec-matrix-synopsis":{
+		"__testing_word2vec-matrix-synopsis": {
 			"description": "[THIS IS ONLY FOR TESTING] Word vecrors of the movie matrix.",
 			"parameters": {
 				"dimensions": 50
