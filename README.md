@@ -1,14 +1,16 @@
 # Gensim data
 
-This repository keeps the models and datasets for the [gensim](https://github.com/RaRe-Technologies/gensim) download API. It serves as the data storage, and shouldn't be used directly (unless you're adding new datasets to it).
+This repository contains the pre-trained models and text corpora for the [Gensim](https://github.com/RaRe-Technologies/gensim) download API. It serves as a data storage for Gensim and shouldn't be used directly.
 
-💡 When you use the gensim download API, **all data will be stored in the `~/gensim-data` folder**.
+💡 When you use the Gensim download API, **all data will be stored in your `~/gensim-data` folder**.
 
-In current repository, all data stored as attachment files in [github-releases](https://github.com/RaRe-Technologies/gensim-data/releases)
+This repository stores the actual (large) data files as attachments in its [releases](https://github.com/RaRe-Technologies/gensim-data/releases) on Github.
+
+🔴 **Each dataset comes with its own license, which the users should study carefully before using the dataset!**
 
 ## Quickstart
 
-To load a model/dataset, use either the Python or command line interface:
+To load a model or corpus, use either the Python or command line interface:
 
 - **Python API**
 
@@ -82,31 +84,31 @@ To load a model/dataset, use either the Python or command line interface:
    ```
 
 ## Available data
+### Datasets
+| name | file size | read_more | description | license |
+|------|-----------|-----------|-------------|---------|
+| 20-newsgroups | 13 MB | <ul><li>http://qwone.com/~jason/20Newsgroups/</li></ul> | The notorious collection of approximately 20,000 newsgroup posts, partitioned (nearly) evenly across 20 different newsgroups. | not found |
+| fake-news | 19 MB | <ul><li>https://www.kaggle.com/mrisdal/fake-news</li></ul> | News dataset, contains text and metadata from 244 websites and represents 12,999 posts in total from a specific window of 30 days. The data was pulled using the webhose.io API, and because it's coming from their crawler, not all websites identified by their BS Detector are present in this dataset. Data sources that were missing a label were simply assigned a label of 'bs'. There are (ostensibly) no genuine, reliable, or trustworthy news sources represented in this dataset (so far), so don't trust anything you read. | https://creativecommons.org/publicdomain/zero/1.0/ |
+| quora-duplicate-questions | 20 MB | <ul><li>https://data.quora.com/First-Quora-Dataset-Release-Question-Pairs</li></ul> | Over 400,000 lines of potential question duplicate pairs. Each line contains IDs for each question in the pair, the full text for each question, and a binary value that indicates whether the line contains a duplicate pair or not. | probably https://www.quora.com/about/tos |
+| text8 | 31 MB | <ul><li>http://mattmahoney.net/dc/textdata.html</li></ul> | First 100,000,000 bytes of plain text from Wikipedia. Used for testing purposes; see wiki-english-* for proper full Wikipedia datasets. | not found |
+| wiki-english-20171001 | 6214 MB | <ul><li>https://dumps.wikimedia.org/enwiki/20171001/</li></ul> | Extracted Wikipedia dump from October 2017. Produced by `python -m gensim.scripts.segment_wiki -f enwiki-20171001-pages-articles.xml.bz2 -o wiki-en.gz` | https://dumps.wikimedia.org/legal.html |
 
-### Corpora
+### Models
+| name | num vectors | file size | base dataset | read_more  | description | parameters | preprocessing | license |
+|------|-------------|-----------|--------------|------------|-------------|------------|---------------|---------|
+| glove-twitter-100 | 1193514 | 387 MB | Twitter (2B tweets, 27B tokens, 1.2M vocab, uncased) | <ul><li>https://nlp.stanford.edu/projects/glove/</li> <li>https://nlp.stanford.edu/pubs/glove.pdf</li></ul> | Pre-trained vectors based on  2B tweets, 27B tokens, 1.2M vocab, uncased (https://nlp.stanford.edu/projects/glove/) | <ul><li>dimension - 100</li></ul> | Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-100.txt`. | http://opendatacommons.org/licenses/pddl/ |
+| glove-twitter-200 | 1193514 | 758 MB | Twitter (2B tweets, 27B tokens, 1.2M vocab, uncased) | <ul><li>https://nlp.stanford.edu/projects/glove/</li> <li>https://nlp.stanford.edu/pubs/glove.pdf</li></ul> | Pre-trained vectors based on 2B tweets, 27B tokens, 1.2M vocab, uncased (https://nlp.stanford.edu/projects/glove/). | <ul><li>dimension - 200</li></ul> | Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-200.txt`. | http://opendatacommons.org/licenses/pddl/ |
+| glove-twitter-25 | 1193514 | 104 MB | Twitter (2B tweets, 27B tokens, 1.2M vocab, uncased) | <ul><li>https://nlp.stanford.edu/projects/glove/</li> <li>https://nlp.stanford.edu/pubs/glove.pdf</li></ul> | Pre-trained vectors based on 2B tweets, 27B tokens, 1.2M vocab, uncased (https://nlp.stanford.edu/projects/glove/). | <ul><li>dimension - 25</li></ul> | Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-25.txt`. | http://opendatacommons.org/licenses/pddl/ |
+| glove-twitter-50 | 1193514 | 199 MB | Twitter (2B tweets, 27B tokens, 1.2M vocab, uncased) | <ul><li>https://nlp.stanford.edu/projects/glove/</li> <li>https://nlp.stanford.edu/pubs/glove.pdf</li></ul> | Pre-trained vectors based on 2B tweets, 27B tokens, 1.2M vocab, uncased (https://nlp.stanford.edu/projects/glove/) | <ul><li>dimension - 50</li></ul> | Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-50.txt`. | http://opendatacommons.org/licenses/pddl/ |
+| glove-wiki-gigaword-100 | 400000 | 128 MB | Wikipedia 2014 + Gigaword 5 (6B tokens, uncased) | <ul><li>https://nlp.stanford.edu/projects/glove/</li> <li>https://nlp.stanford.edu/pubs/glove.pdf</li></ul> | Pre-trained vectors based on Wikipedia 2014 + Gigaword 5.6B tokens, 400K vocab, uncased (https://nlp.stanford.edu/projects/glove/). | <ul><li>dimension - 100</li></ul> | Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-100.txt`. | http://opendatacommons.org/licenses/pddl/ |
+| glove-wiki-gigaword-200 | 400000 | 252 MB | Wikipedia 2014 + Gigaword 5 (6B tokens, uncased) | <ul><li>https://nlp.stanford.edu/projects/glove/</li> <li>https://nlp.stanford.edu/pubs/glove.pdf</li></ul> | Pre-trained vectors based on Wikipedia 2014 + Gigaword, 5.6B tokens, 400K vocab, uncased (https://nlp.stanford.edu/projects/glove/). | <ul><li>dimension - 200</li></ul> | Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-200.txt`. | http://opendatacommons.org/licenses/pddl/ |
+| glove-wiki-gigaword-300 | 400000 | 376 MB | Wikipedia 2014 + Gigaword 5 (6B tokens, uncased) | <ul><li>https://nlp.stanford.edu/projects/glove/</li> <li>https://nlp.stanford.edu/pubs/glove.pdf</li></ul> | Pre-trained vectors based on Wikipedia 2014 + Gigaword, 5.6B tokens, 400K vocab, uncased (https://nlp.stanford.edu/projects/glove/). | <ul><li>dimension - 300</li></ul> | Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-300.txt`. | http://opendatacommons.org/licenses/pddl/ |
+| glove-wiki-gigaword-50 | 400000 | 65 MB | Wikipedia 2014 + Gigaword 5 (6B tokens, uncased) | <ul><li>https://nlp.stanford.edu/projects/glove/</li> <li>https://nlp.stanford.edu/pubs/glove.pdf</li></ul> | Pre-trained vectors based on Wikipedia 2014 + Gigaword, 5.6B tokens, 400K vocab, uncased (https://nlp.stanford.edu/projects/glove/). | <ul><li>dimension - 50</li></ul> | Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-50.txt`. | http://opendatacommons.org/licenses/pddl/ |
+| word2vec-google-news-300 | 3000000 | 1662 MB | Google News (about 100 billion words) | <ul><li>https://code.google.com/archive/p/word2vec/</li> <li>https://arxiv.org/abs/1301.3781</li> <li>https://arxiv.org/abs/1310.4546</li> <li>https://www.microsoft.com/en-us/research/publication/linguistic-regularities-in-continuous-space-word-representations/?from=http%3A%2F%2Fresearch.microsoft.com%2Fpubs%2F189726%2Frvecs.pdf</li></ul> | Pre-trained vectors trained on a part of the Google News dataset (about 100 billion words). The model contains 300-dimensional vectors for 3 million words and phrases. The phrases were obtained using a simple data-driven approach described in 'Distributed Representations of Words and Phrases and their Compositionality' (https://code.google.com/archive/p/word2vec/). | <ul><li>dimension - 300</li></ul> | - | not found |
 
-| name | source | description |
-|------|--------|-------------|
-| 20-newsgroups | http://qwone.com/~jason/20Newsgroups/ | The 20 Newsgroups data set is a collection of approximately 20,000 newsgroup documents, partitioned (nearly) evenly across 20 different newsgroups |
-| fake-news | Kaggle | It contains text and metadata scraped from 244 websites tagged as 'bullshit' here by the BS Detector Chrome Extension by Daniel Sieradski. |
-| text8 | http://mattmahoney.net/dc/text8.zip | Cleaned small sample from wikipedia |
-| wiki-en | https://dumps.wikimedia.org/enwiki/20171001/ | Extracted Wikipedia dump from October 2017. Produced by `python -m gensim.scripts.segment_wiki -f enwiki-20171001-pages-articles.xml.bz2 -o wiki-en.gz` |
 
-### Pretrained models
 
-| name | description | related papers | preprocessing | parameters |
-|------|-------------|------------|--------|---------------|
-| glove-twitter-100 | Pre-trained vectors, 2B tweets, 27B tokens, 1.2M vocab, uncased. https://nlp.stanford.edu/projects/glove/ | https://nlp.stanford.edu/pubs/glove.pdf | Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-100.txt` | dimensions = 100 |
-| glove-twitter-200 | Pre-trained vectors, 2B tweets, 27B tokens, 1.2M vocab, uncased. https://nlp.stanford.edu/projects/glove/ | https://nlp.stanford.edu/pubs/glove.pdf | Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-200.txt` | dimensions = 200 |
-| glove-twitter-25 | Pre-trained vectors, 2B tweets, 27B tokens, 1.2M vocab, uncased. https://nlp.stanford.edu/projects/glove/ | https://nlp.stanford.edu/pubs/glove.pdf | Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-25.txt` | dimensions = 25 |
-| glove-twitter-50 | Pre-trained vectors, 2B tweets, 27B tokens, 1.2M vocab, uncased. https://nlp.stanford.edu/projects/glove/ | https://nlp.stanford.edu/pubs/glove.pdf | Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-twitter-50.txt` | dimensions = 50 |
-| glove-wiki-gigaword-100 | Pre-trained vectors ,Wikipedia 2014 + Gigaword 5,6B tokens, 400K vocab, uncased. https://nlp.stanford.edu/projects/glove/ | https://nlp.stanford.edu/pubs/glove.pdf | Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-100.txt` | dimensions = 100 |
-| glove-wiki-gigaword-200 | Pre-trained vectors ,Wikipedia 2014 + Gigaword 5,6B tokens, 400K vocab, uncased. https://nlp.stanford.edu/projects/glove/ | https://nlp.stanford.edu/pubs/glove.pdf | Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-200.txt` | dimentions = 200 |
-| glove-wiki-gigaword-300 | Pre-trained vectors, Wikipedia 2014 + Gigaword 5, 6B tokens, 400K vocab, uncased. https://nlp.stanford.edu/projects/glove/ | https://nlp.stanford.edu/pubs/glove.pdf | Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-300.txt` | dimensions = 300 |
-| glove-wiki-gigaword-50 | Pre-trained vectors ,Wikipedia 2014 + Gigaword 5,6B tokens, 400K vocab, uncased. https://nlp.stanford.edu/projects/glove/ | https://nlp.stanford.edu/pubs/glove.pdf | Converted to w2v format with `python -m gensim.scripts.glove2word2vec -i <fname> -o glove-wiki-gigaword-50.txt` | dimensions = 50 |
-| word2vec-google-news-300 | Pre-trained vectors trained on part of Google News dataset (about 100 billion words). The model contains 300-dimensional vectors for 3 million words and phrases. The phrases were obtained using a simple data-driven approach described in 'Distributed Representations of Words and Phrases and their Compositionality', https://code.google.com/archive/p/word2vec/ | https://arxiv.org/abs/1301.3781, https://arxiv.org/abs/1310.4546, https://www.microsoft.com/en-us/research/publication/linguistic-regularities-in-continuous-space-word-representations/?from=http%3A%2F%2Fresearch.microsoft.com%2Fpubs%2F189726%2Frvecs.pdf | - | dimensions = 300 |
-
-(generated by [generate_table.py](https://github.com/RaRe-Technologies/gensim-data/blob/master/generate_table.py) based on [list.json](https://github.com/RaRe-Technologies/gensim-data/blob/master/list.json))
+(generated automatically by [generate_table.py](https://github.com/RaRe-Technologies/gensim-data/blob/master/generate_table.py) based on [list.json](https://github.com/RaRe-Technologies/gensim-data/blob/master/list.json))
 
 
 # Want to add a new corpus or model?
