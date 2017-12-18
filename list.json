@@ -122,6 +122,23 @@
 		}
 	},
 	"models": {
+		"word2vec-ruscorpora-300": {
+			"num_records": 184973,
+			"file_size": 208427381,
+			"base_dataset": "Russian National Corpus (about 250M words)",
+			"reader_code": "https://github.com/RaRe-Technologies/gensim-data/releases/download/word2vec-ruscorpora-300/__init__.py",
+			"license": "not found",
+			"parameters": {
+				"dimension": 300,
+				"window_size": 10
+			},
+			"description": "Word2vec Continuous Skipgram vectors trained on full Russian National Corpus (about 250M words). The model contains 185K words.",
+			"preprocessing": "The corpus was lemmatized and tagged with Universal PoS",
+			"read_more": ["https://www.academia.edu/24306935/WebVectors_a_Toolkit_for_Building_Web_Interfaces_for_Vector_Semantic_Models", "http://rusvectores.org/en/", "https://github.com/RaRe-Technologies/gensim-data/issues/3"],
+			"checksum": "9bdebdc8ae6d17d20839dd9b5af10bc4",
+			"file_name": "word2vec-ruscorpora-300.gz",
+			"parts": 1
+		},
 		"word2vec-google-news-300": {
 			"num_records": 3000000,
 			"file_size": 1743563840,
