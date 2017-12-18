@@ -122,7 +122,7 @@
 		}
 	},
 	"models": {
-		"numberbatch-17.06.txt": {
+    "numberbatch-17.06.txt": {
 			"num_records": 1917247,
 			"file_size": 1193268949,
 			"base_dataset": "ConceptNet, word2vec, GloVe, and OpenSubtitles 2016",
@@ -135,6 +135,23 @@
 			"read_more": ["http://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14972"],
 			"checksum": "dfc3709f3d03ac075ac6b54917c54d04",
 			"file_name": "numberbatch-17.06.txt.gz",
+			"parts": 1
+		},
+		"word2vec-ruscorpora-300": {
+			"num_records": 184973,
+			"file_size": 208427381,
+			"base_dataset": "Russian National Corpus (about 250M words)",
+			"reader_code": "https://github.com/RaRe-Technologies/gensim-data/releases/download/word2vec-ruscorpora-300/__init__.py",
+			"license": "https://creativecommons.org/licenses/by/4.0/deed.en",
+			"parameters": {
+				"dimension": 300,
+				"window_size": 10
+			},
+			"description": "Word2vec Continuous Skipgram vectors trained on full Russian National Corpus (about 250M words). The model contains 185K words.",
+			"preprocessing": "The corpus was lemmatized and tagged with Universal PoS",
+			"read_more": ["https://www.academia.edu/24306935/WebVectors_a_Toolkit_for_Building_Web_Interfaces_for_Vector_Semantic_Models", "http://rusvectores.org/en/", "https://github.com/RaRe-Technologies/gensim-data/issues/3"],
+			"checksum": "9bdebdc8ae6d17d20839dd9b5af10bc4",
+			"file_name": "word2vec-ruscorpora-300.gz",
 			"parts": 1
 		},
 		"word2vec-google-news-300": {
