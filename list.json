@@ -122,6 +122,21 @@
 		}
 	},
 	"models": {
+		"conceptnet-numberbatch-17-06-300": {
+			"num_records": 1917247,
+			"file_size": 1225497562,
+			"base_dataset": "ConceptNet, word2vec, GloVe, and OpenSubtitles 2016",
+			"reader_code": "https://github.com/RaRe-Technologies/gensim-data/releases/download/conceptnet-numberbatch-17-06-300/__init__.py",
+			"license": "https://github.com/commonsense/conceptnet-numberbatch/blob/master/LICENSE.txt",
+			"parameters": {
+				"dimension": 300
+			},
+			"description": "ConceptNet Numberbatch consists of state-of-the-art semantic vectors (also known as word embeddings) that can be used directly as a representation of word meanings or as a starting point for further machine learning. ConceptNet Numberbatch is part of the ConceptNet open data project. ConceptNet provides lots of ways to compute with word meanings, one of which is word embeddings. ConceptNet Numberbatch is a snapshot of just the word embeddings. It is built using an ensemble that combines data from ConceptNet, word2vec, GloVe, and OpenSubtitles 2016, using a variation on retrofitting.",
+			"read_more": ["http://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14972", "https://github.com/commonsense/conceptnet-numberbatch", "http://conceptnet.io/"],
+			"checksum": "fd642d457adcd0ea94da0cd21b150847",
+			"file_name": "conceptnet-numberbatch-17-06-300.gz",
+			"parts": 1
+		},
 		"word2vec-ruscorpora-300": {
 			"num_records": 184973,
 			"file_size": 208427381,
