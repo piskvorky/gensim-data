@@ -127,7 +127,7 @@
 			"file_size": 208427381,
 			"base_dataset": "Russian National Corpus (about 250M words)",
 			"reader_code": "https://github.com/RaRe-Technologies/gensim-data/releases/download/word2vec-ruscorpora-300/__init__.py",
-			"license": "not found",
+			"license": "https://creativecommons.org/licenses/by/4.0/deed.en",
 			"parameters": {
 				"dimension": 300,
 				"window_size": 10
