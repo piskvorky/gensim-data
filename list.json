@@ -1,5 +1,18 @@
 {
 	"corpora": {
+		"patent-2017": {
+			"num_records": 353197,
+			"record_format": "dict",
+			"file_size": 3087262469,
+			"reader_code": "https://github.com/RaRe-Technologies/gensim-data/releases/download/patent-2017/__init__.py",
+			"license": "not found",
+			"description": "Patent Grant Full Text. Contains the full text including tables, sequence data and 'in-line' mathematical expressions of each patent grant issued in 2017.",
+			"checksum-0": "818501f0b9af62d3b88294d86d509f8f",
+			"checksum-1": "66c05635c1d3c7a19b4a335829d09ffa",
+			"file_name": "patent-2017.gz",
+			"read_more": ["http://patents.reedtech.com/pgrbft.php"],
+			"parts": 2
+		},
 		"quora-duplicate-questions": {
 			"num_records": 404290,
 			"record_format": "dict",
