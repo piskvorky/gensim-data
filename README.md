@@ -14,7 +14,7 @@ Read more about the project rationale and design decisions in this article: [New
 
 Technically, the actual (sometimes large) corpora and model files are being stored as [release attachments](https://github.com/RaRe-Technologies/gensim-data/releases) here on Github. Each dataset (and each new version of each dataset) gets its own release, forever immutable.
 
-Each release is accompanied by a usage example and release notes, for example: [Corpus of USPTO Patents from 2017](https://github.com/RaRe-Technologies/gensim-data/releases/tag/patent-2017).
+Each release is accompanied by a usage example and release notes, for example: [Corpus of USPTO Patents from 2017](https://github.com/RaRe-Technologies/gensim-data/releases/tag/patent-2017); [English Wikipedia from 2017 with plaintext section](https://github.com/RaRe-Technologies/gensim-data/releases/tag/wiki-english-20171001).
 
 🔴 **Each dataset comes with its own license, which the users should study carefully before using the dataset!**
 
