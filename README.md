@@ -1,22 +1,32 @@
-# Gensim data
+# What is Gensim-data for?
 
-Read the story & usage tutorial: [New Download API for Pretrained NLP Models and Datasets](https://rare-technologies.com/new-download-api-for-pretrained-nlp-models-and-datasets-in-gensim/)
+Research datasets regularly disappear, change over time, become obsolete or come without a sane implementation to handle the data format reading and processing.
 
-This repository contains the pre-trained models and text corpora for the [Gensim](https://github.com/RaRe-Technologies/gensim) download API. It serves as a data storage for Gensim and shouldn't be used directly.
+For this reason, [Gensim](https://github.com/RaRe-Technologies/gensim) launched its own dataset storage, committed to long-term support, a sane standardized usage API and focused on datasets for **unstructured text processing** (no images or audio). This [Gensim-data](https://github.com/RaRe-Technologies/gensim-data) repository serves as that storage.
 
-💡 When you use the Gensim download API, **all data will be stored in your `~/gensim-data` folder**.
+**There's no need for you to use this repository directly**. Instead, simply install Gensim and use its download API (see the Quickstart below). It will "talk" to this repository automagically.
 
-This repository stores the actual (large) data files as attachments in its [releases](https://github.com/RaRe-Technologies/gensim-data/releases) on Github.
+💡 When you use the Gensim download API, all data is stored in your `~/gensim-data` home folder.
+
+Read more about the project rationale and design decisions in this article: [New Download API for Pretrained NLP Models and Datasets](https://rare-technologies.com/new-download-api-for-pretrained-nlp-models-and-datasets-in-gensim/).
+
+# How does it work?
+
+Technically, the actual (sometimes large) corpora and model files are being stored as [release attachments](https://github.com/RaRe-Technologies/gensim-data/releases) here on Github. Each dataset (and each new version of each dataset) gets its own release, forever immutable.
+
+Each release is accompanied by a usage example and release notes, for example: [Corpus of USPTO Patents from 2017](https://github.com/RaRe-Technologies/gensim-data/releases/tag/patent-2017); [English Wikipedia from 2017 with plaintext section](https://github.com/RaRe-Technologies/gensim-data/releases/tag/wiki-english-20171001).
 
 🔴 **Each dataset comes with its own license, which the users should study carefully before using the dataset!**
 
+----
+
 ## Quickstart
 
-To load a model or corpus, use either the Python or command line interface:
+To load a model or corpus, use either the Python or command line interface of [Gensim](https://github.com/RaRe-Technologies/gensim) (you'll need Gensim installed first):
 
 - **Python API**
 
-  Example: load a pre-trained model (gloVe word vectors)
+  Example: load a pre-trained model (gloVe word vectors):
 
   ```python
   import gensim.downloader as api
@@ -42,7 +52,7 @@ To load a model or corpus, use either the Python or command line interface:
   """
   ```
 
-  Example: load a corpus and use it to train Word2Vec
+  Example: load a corpus and use it to train a Word2Vec model:
 
   ```python
   from gensim.models.word2vec import Word2Vec
@@ -69,7 +79,7 @@ To load a model or corpus, use either the Python or command line interface:
   """
   ```
 
-  Example: **only** download and return the file path (no opening):
+  Example: **only** download a dataset and return the local file path (no opening):
 
   ```python
   import gensim.downloader as api
@@ -78,15 +88,20 @@ To load a model or corpus, use either the Python or command line interface:
   print(api.load("glove-twitter-25", return_path=True))  # output: /home/user/gensim-data/glove-twitter-25/glove-twitter-25.gz
   ```
 
- - **CLI, command line interface**
+ - The same operations, but from **CLI, command line interface**:
+
    ```bash
    python -m gensim.downloader --info  # show info about available models/datasets
    python -m gensim.downloader --info text8  # download text8 dataset to ~/gensim-data/text8
    python -m gensim.downloader --download glove-twitter-25  # download model to ~/gensim-data/glove-twitter-50/
    ```
 
+----
+
 ## Available data
+
 ### Datasets
+
 | name | file size | read_more | description | license |
 |------|-----------|-----------|-------------|---------|
 | 20-newsgroups | 13 MB | <ul><li>http://qwone.com/~jason/20Newsgroups/</li></ul> | The notorious collection of approximately 20,000 newsgroup posts, partitioned (nearly) evenly across 20 different newsgroups. | not found |
@@ -111,7 +126,9 @@ To load a model or corpus, use either the Python or command line interface:
 | word2vec-ruscorpora-300 | 184973 | 198 MB | Russian National Corpus (about 250M words) | <ul><li>https://www.academia.edu/24306935/WebVectors_a_Toolkit_for_Building_Web_Interfaces_for_Vector_Semantic_Models</li> <li>http://rusvectores.org/en/</li> <li>https://github.com/RaRe-Technologies/gensim-data/issues/3</li></ul> | Word2vec Continuous Skipgram vectors trained on full Russian National Corpus (about 250M words). The model contains 185K words. | <ul><li>window_size - 10</li> <li>dimension - 300</li></ul> | The corpus was lemmatized and tagged with Universal PoS | https://creativecommons.org/licenses/by/4.0/deed.en |
 
 
-(table generated automatically by [generate_table.py](https://github.com/RaRe-Technologies/gensim-data/blob/master/generate_table.py) based on [list.json](https://github.com/RaRe-Technologies/gensim-data/blob/master/list.json))
+(this table is generated automatically by [generate_table.py](https://github.com/RaRe-Technologies/gensim-data/blob/master/generate_table.py) based on [list.json](https://github.com/RaRe-Technologies/gensim-data/blob/master/list.json))
+
+----
 
 # Want to add a new corpus or model?
 
@@ -119,10 +136,10 @@ To load a model or corpus, use either the Python or command line interface:
 
 2. Share the compressed file on any file-sharing service.
 
-2. Create a [new issue](https://github.com/RaRe-Technologies/gensim-data/issues) and give us the dataset link. Add a **detailed description** on how you created the dataset, related papers or research, plus how users should use it. Include a code example where relevant.
+2. Create a [new issue](https://github.com/RaRe-Technologies/gensim-data/issues) and give us the dataset link. Add a **detailed description** on **why** and **how** you created the dataset, any related papers or research, plus how do you expect other users should use it. Include a code example where relevant.
 
 ----------------
 
-`Gensim-data` is open source software released under the [LGPL license](https://github.com/rare-technologies/gensim-data/blob/master/LICENSE).
+`Gensim-data` is open source software released under the [LGPL 2.1 license](https://github.com/rare-technologies/gensim-data/blob/master/LICENSE).
 
-Copyright (c) 2017 [RaRe Technologies](https://rare-technologies.com/)
+Copyright (c) 2018 [RARE Technologies](https://rare-technologies.com/).
