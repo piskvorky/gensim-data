@@ -5,7 +5,7 @@
 			"record_format": "dict",
 			"file_size": 6344358,
 			"reader_code": "https://github.com/RaRe-Technologies/gensim-data/releases/download/semeval-2016-2017-task3-subtaskB-eng/__init__.py",
-			"license": "",
+			"license": "all files released for the task are free for general research use",
 			"description": "",
 			"checksum": "acab4d1c27f9f8f4da3c72825a22ca88",
 			"file_name": "semeval-2016-2017-task3-subtaskB-eng.gz",
