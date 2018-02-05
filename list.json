@@ -1,5 +1,17 @@
 {
 	"corpora": {
+		"semeval-2016-2017-task3-subtaskB-eng": {
+			"num_records": -1,
+			"record_format": "dict",
+			"file_size": 6344358,
+			"reader_code": "https://github.com/RaRe-Technologies/gensim-data/releases/download/semeval-2016-2017-task3-subtaskB-eng/__init__.py",
+			"license": "",
+			"description": "",
+			"checksum": "acab4d1c27f9f8f4da3c72825a22ca88",
+			"file_name": "semeval-2016-2017-task3-subtaskB-eng.gz",
+			"read_more": ["http://alt.qcri.org/semeval2017/task3/", "http://alt.qcri.org/semeval2017/task3/data/uploads/semeval2017-task3.pdf", "https://github.com/RaRe-Technologies/gensim-data/issues/18", "https://github.com/Witiko/semeval-2016_2017-task3-subtaskB-english"],
+			"parts": 1
+		},
 		"semeval-2016-2017-task3-subtaskA-unannotated-eng": {
 			"num_records": 189941,
 			"record_format": "dict",
@@ -28,10 +40,10 @@
 
 				]
 			},
-			"description": "Community Question Answering (CQA) forums are gaining popularity online. They are seldom moderated, rather open, and thus they have few restrictions, if any, on who can post and who can answer a question. On the positive side, this means that one can freely ask any question and expect some good, honest answers. On the negative side, it takes effort to go through all possible answers and to make sense of them. For example, it is not unusual for a question to have hundreds of answers, which makes it very time consuming to the user to inspect and to winnow. The challenge we propose may help automate the process of finding good answers to new questions in a community-created discussion forum (e.g., by retrieving similar questions in the forum and identifying the posts in the answer threads of those questions that answer the question well).",
+			"description": "",
 			"checksum": "2de0e2f2c4f91c66ae4fcf58d50ba816",
 			"file_name": "semeval-2016-2017-task3-subtaskA-unannotated-eng.gz",
-			"read_more": ["http://alt.qcri.org/semeval2016/task3/", "http://alt.qcri.org/semeval2016/task3/data/uploads/semeval2016-task3-report.pdf"],
+			"read_more": ["http://alt.qcri.org/semeval2016/task3/", "http://alt.qcri.org/semeval2016/task3/data/uploads/semeval2016-task3-report.pdf", "https://github.com/RaRe-Technologies/gensim-data/issues/18", "https://github.com/Witiko/semeval-2016_2017-task3-subtaskA-unannotated-english"],
 			"parts": 1
 		},
 		"patent-2017": {
