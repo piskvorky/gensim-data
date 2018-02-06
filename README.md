@@ -92,7 +92,7 @@ To load a model or corpus, use either the Python or command line interface of [G
 
    ```bash
    python -m gensim.downloader --info  # show info about available models/datasets
-   python -m gensim.downloader --info text8  # download text8 dataset to ~/gensim-data/text8
+   python -m gensim.downloader --download text8  # download text8 dataset to ~/gensim-data/text8
    python -m gensim.downloader --download glove-twitter-25  # download model to ~/gensim-data/glove-twitter-50/
    ```
 
