@@ -1,5 +1,57 @@
 {
 	"corpora": {
+		"semeval-2016-2017-task3-subtaskBC": {
+			"num_records": -1,
+			"record_format": "dict",
+			"file_size": 6344358,
+			"reader_code": "https://github.com/RaRe-Technologies/gensim-data/releases/download/semeval-2016-2017-task3-subtaskB-eng/__init__.py",
+			"license": "All files released for the task are free for general research use",
+			"fields": {
+				"2016-train": ["..."],
+				"2016-dev": ["..."],
+				"2017-test": ["..."],
+				"2016-test": ["..."]
+			},
+			"description": "SemEval 2016 / 2017 Task 3 Subtask B and C datasets contain train+development (317 original questions, 3,169 related questions, and 31,690 comments), and test datasets in English. The description of the tasks and the collected data is given in sections 3 and 4.1 of the task paper http://alt.qcri.org/semeval2016/task3/data/uploads/semeval2016-task3-report.pdf linked in section “Papers” of https://github.com/RaRe-Technologies/gensim-data/issues/18.",
+			"checksum": "701ea67acd82e75f95e1d8e62fb0ad29",
+			"file_name": "semeval-2016-2017-task3-subtaskBC.gz",
+			"read_more": ["http://alt.qcri.org/semeval2017/task3/", "http://alt.qcri.org/semeval2017/task3/data/uploads/semeval2017-task3.pdf", "https://github.com/RaRe-Technologies/gensim-data/issues/18", "https://github.com/Witiko/semeval-2016_2017-task3-subtaskB-english"],
+			"parts": 1
+		},
+		"semeval-2016-2017-task3-subtaskA-unannotated": {
+			"num_records": 189941,
+			"record_format": "dict",
+			"file_size": 234373151,
+			"reader_code": "https://github.com/RaRe-Technologies/gensim-data/releases/download/semeval-2016-2017-task3-subtaskA-unannotated-eng/__init__.py",
+			"license": "These datasets are free for general research use.",
+			"fields": {
+				"THREAD_SEQUENCE": "",
+				"RelQuestion": {
+					"RELQ_CATEGORY": "question category, according to the Qatar Living taxonomy",
+					"RELQ_DATE": "date of posting",
+					"RELQ_ID": "question indentifier",
+					"RELQ_USERID": "identifier of the user asking the question",
+					"RELQ_USERNAME": "name of the user asking the question",
+					"RelQBody": "body of question",
+					"RelQSubject": "subject of question"
+				},
+				"RelComments": [
+					{
+						"RelCText": "text of answer",
+						"RELC_USERID": "identifier of the user posting the comment",
+						"RELC_ID": "comment identifier",
+						"RELC_USERNAME": "name of the user posting the comment",
+						"RELC_DATE": "date of posting"
+					}
+
+				]
+			},
+			"description": "SemEval 2016 / 2017 Task 3 Subtask A unannotated dataset contains 189,941 questions and 1,894,456 comments in English collected from the Community Question Answering (CQA) web forum of Qatar Living. These can be used as a corpus for language modelling.",
+			"checksum": "2de0e2f2c4f91c66ae4fcf58d50ba816",
+			"file_name": "semeval-2016-2017-task3-subtaskA-unannotated.gz",
+			"read_more": ["http://alt.qcri.org/semeval2016/task3/", "http://alt.qcri.org/semeval2016/task3/data/uploads/semeval2016-task3-report.pdf", "https://github.com/RaRe-Technologies/gensim-data/issues/18", "https://github.com/Witiko/semeval-2016_2017-task3-subtaskA-unannotated-english"],
+			"parts": 1
+		},
 		"patent-2017": {
 			"num_records": 353197,
 			"record_format": "dict",
