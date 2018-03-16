@@ -198,7 +198,7 @@
 			},
 			"description": "1 million word vectors trained on Wikipedia 2017, UMBC webbase corpus and statmt.org news dataset (16B tokens).",
 			"read_more": ["https://fasttext.cc/docs/en/english-vectors.html", "https://arxiv.org/abs/1712.09405", "https://arxiv.org/abs/1607.01759"],
-			"checksum": "3847c8c350598d2b56028610f7e7fe64",
+			"checksum": "de2bb3a20c46ce65c9c131e1ad9a77af",
 			"file_name": "fasttext-wiki-news-subwords-300.gz",
 			"parts": 1
 		},
