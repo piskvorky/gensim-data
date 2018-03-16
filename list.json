@@ -188,7 +188,7 @@
 	},
 	"models": {
 		"fasttext-wiki-news-subwords-300": {
-			"num_records": 1000000,
+			"num_records": 999999,
 			"file_size": 1005007116,
 			"base_dataset": "Wikipedia 2017, UMBC webbase corpus and statmt.org news dataset (16B tokens)",
 			"reader_code": "https://github.com/RaRe-Technologies/gensim-data/releases/download/fasttext-wiki-news-subwords-300/__init__.py",
